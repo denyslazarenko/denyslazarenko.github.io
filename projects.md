@@ -14,8 +14,8 @@ use_fontawesome: true
 <div class="col-12 col-sm-8">
     <h3>​ Text Classification with Deep Learning </h3>
     <p class="italic">December 2017 - June 2018 </p>
-    <p><span class="bold">Abstract:</span> ONowadays, retail e-commerce sales are quickly increasing. Large online e-commerce websites serve millions of users’ requests per day. Therefore it is necessary to make the processes of registrations and purchases as much convenient and fast as possible. For many classified platforms such as Amazon or  Ebay, users who would like to create a new advertisement must fill in the required fields: title, description, price and category. Choosing a category can be a tricky moment because in most cases users have to make a choice from more than hundred categories. Therefore, the problem of advertisement automatic category prediction is very important in terms of saving moderators’ time and as a result, decreasing the number of necessary moderators to process them. Effective algorithms which would work with text data, have high accuracy and appropriate speed are in high Demand.</p>
-    <p>The objective of this thesis is to build an effective model which would have high accuracy and appropriate speed for classification of advertisements at the ecommerce platform Jiji.ng. 
+    <p><span class="bold">Abstract:</span> Nowadays, retail e-commerce sales are quickly increasing. Large online e-commerce websites serve millions of users’ requests per day. Therefore it is necessary to make the processes of registrations and purchases as much convenient and fast as possible. For many classified platforms such as Amazon or  Ebay, users who would like to create a new advertisement must fill in the required fields: title, description, price and category. Choosing a category can be a tricky moment because in most cases users have to make a choice from more than hundred categories. Therefore, the problem of advertisement automatic category prediction is very important in terms of saving moderators’ time and as a result, decreasing the number of necessary moderators to process them. Effective algorithms which would work with text data, have high accuracy and appropriate speed are in high Demand.</p>
+    <p><b>The objective</b> of this thesis is to build an effective model which would have high accuracy and appropriate speed for classification of advertisements at the ecommerce platform <a href="https://jiji.ng/">Jiji.ng.</a> 
     In particular:
         <ul>
             <li> to consider different models that are used for texts classification </li>
@@ -23,11 +23,12 @@ use_fontawesome: true
             <li> to prove the efficiency of Convolutional neural networks for NLP related tasks </li>
         </ul>
     </p>
-    <p><span class="bold">Mentors:</span> Anton Maltsev</p>
-    <p><span class="bold">Topic of Bachelor Thesis</p>
+    <p><span class="bold"> Mentors:</span> Anton Maltsev</p>
+    <p><span class="bold"> Topic of Bachelor Thesis </span></p>
     <a href="https://github.com/tankz0r/Bachelor_thesis/blob/master/Dissertation/dissertation.pdf" class="btn btn-light">
         <i class="fa fa-file"></i> Paper
     </a>
+
 </div>
 </div>
 <hr>

@@ -31,6 +31,7 @@ psql=# alter user <username> with encrypted password '<password>';
 ```psql -d tpch -h localhost -U denys```
 - This command can be helpful to determine the actual port:
 ```sudo netstat -plunt |grep postgres```
+
 #### Make different ussers login through linux system 
 ```SET ROLE```
 #### List Postgesql databases
@@ -44,7 +45,8 @@ psql=# alter user <username> with encrypted password '<password>';
 #### Configure config file
 ```/etc/postgresql/9.5/main/postgresql.conf```   
 - https://wiki.postgresql.org/wiki/Tuning_Your_PostgreSQL_Server   
-![image](https://user-images.githubusercontent.com/13698885/50280473-ed7e1700-044c-11e9-9c31-c8fa6de27dee.png)   
+![image](https://user-images.githubusercontent.com/13698885/50280473-ed7e1700-044c-11e9-9c31-c8fa6de27dee.png)  
+ 
 **Work_mem**- this parameter specifies the amount of memory to be used by internal sort operations and hash tables before writing to temporary disk files. If a lot of complex sorts are happening, and you have enough memory, then increasing the work_mem parameter allows PostgreSQL to do larger in-memory sorts which will be faster than disk based equivalents.
 #### Restart postgres service
 ```sudo service postgresql restart```
