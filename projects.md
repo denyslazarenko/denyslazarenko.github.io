@@ -9,123 +9,70 @@ use_fontawesome: true
 
 <div class="row content-row">
 <div class="col-12 col-sm-4 image-wrapper">
-    <img src="{{ site.baseurl }}/images/research_poverty_ermon.jpg">
+    <img src="{{ site.baseurl }}/images/thesis.jpg">
 </div>
 <div class="col-12 col-sm-8">
-    <h3>Poverty Prediction with Public Landsat 7 Satellite Imagery and Machine Learning</h3>
-    <p class="italic">Summer 2017 - Present</p>
-    <p><span class="bold">Abstract:</span> Obtaining detailed and reliable data about local economic livelihoods in developing countries is expensive, and data are consequently scarce. Previous work has shown that it is possible to measure local-level economic livelihoods using high-resolution satellite imagery. However, such imagery is relatively expensive to acquire, often not updated frequently, and is mainly available for recent years. We train CNN models on free and publicly available multispectral daytime satellite images of the African continent from the Landsat 7 satellite, which has collected imagery with global coverage for almost two decades. We show that despite these images' lower resolution, we can achieve accuracies that exceed previous benchmarks.</p>
-    <p><span class="bold">Mentors:</span> Stefano Ermon, Marshall Burke, David Lobell</p>
-    <p><span class="bold">Conference Workshop Paper:</span> NIPS Conference 2017, Workshop on Machine Learning for the Developing World</p>
-    <a href="https://arxiv.org/pdf/1711.03654.pdf" class="btn btn-light">
+    <h3>​ Text Classification with Deep Learning </h3>
+    <p class="italic">December 2017 - June 2018 </p>
+    <p><span class="bold">Abstract:</span> ONowadays, retail e-commerce sales are quickly increasing. Large online e-commerce websites serve millions of users’ requests per day. Therefore it is necessary to make the processes of registrations and purchases as much convenient and fast as possible. For many classified platforms such as Amazon or  Ebay, users who would like to create a new advertisement must fill in the required fields: title, description, price and category. Choosing a category can be a tricky moment because in most cases users have to make a choice from more than hundred categories. Therefore, the problem of advertisement automatic category prediction is very important in terms of saving moderators’ time and as a result, decreasing the number of necessary moderators to process them. Effective algorithms which would work with text data, have high accuracy and appropriate speed are in high Demand.</p>
+    <p>The objective of this thesis is to build an effective model which would have high accuracy and appropriate speed for classification of advertisements at the ecommerce platform Jiji.ng. 
+    In particular:
+        <ul>
+            <li> to consider different models that are used for texts classification </li>
+            <li> to compare performance of Deep Learning models </li>
+            <li> to prove the efficiency of Convolutional neural networks for NLP related tasks </li>
+        </ul>
+    </p>
+    <p><span class="bold">Mentors:</span> Anton Maltsev</p>
+    <p><span class="bold">Topic of Bachelor Thesis</p>
+    <a href="https://github.com/tankz0r/Bachelor_thesis/blob/master/Dissertation/dissertation.pdf" class="btn btn-light">
         <i class="fa fa-file"></i> Paper
     </a>
 </div>
 </div>
 <hr>
 
-<div class="row content-row">
-<div class="col-12 col-sm-4 image-wrapper">
-    <img src="{{ site.baseurl }}/images/research_stereo_ihler.png">
-</div>
-<div class="col-12 col-sm-8">
-    <h3>Conditional Random Fields for Dense Stereo Matching</h3>
-    <p class="italic">Summer 2012 - Summer 2014</p>
-    <p><span class="bold">Abstract:</span> Various algorithms have been developed over the past two decades for solving the stereo correspondence problem, which is defined as the identification of the offset or disparity of an object in a pair of stereo images. Recent work has shown that conditional random fields (CRFs) have the potential to be faster and more accurate than traditional local matching algorithms. The canonical CRF for solving dense stereo matching problems uses a basic energy function that accounts for both local intensity matching and smoothness costs. Traditionally, the smoothness term relies on a binary Potts Model which fails to assign different costs to different disparities. In this paper, we extend the smoothness term in the energy function to be more robust. Specifically, we explore using a logarithmic function modulated by discrete edge gradient bins and binary edge detection features. The logarithmic function is able to distinguish between different disparities and therefore assign more appropriate costs. Our results suggest that our algorithm exceeds the performance of the traditional smoothness term based on a Potts Model. However, further optimization in our CRF evaluation process is necessary to achieve real-time outputs.</p>
-    <p><span class="bold">Mentor:</span> Dr. Alex Ihler, UC Irvine</p>
-    <p><span class="bold">Presentation:</span> 2013 Southern California Conference for Undergraduate Research (SCCUR) at Whittier College, CA</p>
-    <a href="https://drive.google.com/file/d/0B-7rmGyO0CsvVC1aVVlPUzEtTkE/view" class="btn btn-light">
-        <i class="fa fa-file"></i> Presentation Slides
-    </a>
-    <a href="https://youtu.be/Q3Iml7WxyKw" class="btn btn-light">
-        <i class="fab fa-youtube"></i> Presentation Video
-    </a>
-</div>
-</div>
-<hr>
-
-<div class="row content-row">
-<div class="col-12 col-sm-4">
-    <img src="{{ site.baseurl }}/images/research_foam_tanner.jpg">
-</div>
-<div class="col-12 col-sm-8 section">
-    <h3>Effect of Aging on the Foam Fractionation of Lactoferrin</h3>
-    <p class="italic">Summer 2011</p>
-    <p><span class="bold">Abstract:</span> Foam fractionation is an inexpensive and simple technique for concentrating proteins. The foamability of a protein can drastically change with the age of the protein. The foamability of solutions created from ten year old bovine lactoferrin (bLF) protein was investigated with varying concentration protein, air flow velocity, and the pH of the solution. The results suggest the foamability of the aged protein decreased to an insignificant level except at high pH with a protein concentration of 0.1 mg/mL.</p>
-    <p><span class="bold">Mentor:</span> Dr. Robert Tanner, Caltech</p>
-    <p><span class="bold">Collaborators:</span> Benjamin Yeh, Yuehan Huang</p>
-    <p><span class="bold">Presentation:</span> 43rd American Chemistry Society Western Regional Meeting, Pasadena, CA</p>
-</div>
-</div>
-
 <!-- Experience -->
 <h1 class="section-title">Experience</h1>
 
 <div class="row content-row">
 <div class="col-12 col-sm-4">
-    <img src="images/apple_ios.png">
+    <img src="images/genesis.png">
 </div>
 <div class="col-12 col-sm-8">
-    <h3>Apple Software Engineer Intern</h3>
-    <p class="italic">June 2016 - September 2016</p>
-    <p>I interned on the iOS SpringBoard team, improving the system app for iOS 10 and future releases. Project details under NDA.</p>
+    <h3><a href="https://gen.tech/" class="btn btn-light"> Genesis Tech</a>Junior Machine Learning Engineer</h3>
+    <p class="italic">June 2017 - August 2018</p>
+    <p> Main project:
+        <ul>
+        <li>Website User Text Analysis: error detection and correction of the English texts, gibberish detection, semantic analysis using NLP based approaches </li>
+        <li>Improvement of advert auto-moderation system (10% growth): implemented models for multi-class classification of pictures and texts using Deep Learning Neural Networks. </li>
+        <li>Development of recommendation system </li>
+        <li>Improvement of fraud detection(~15% improvement)</li>
+        <b>Technologies</b>:​​ Python; Keras, TensorFlow, PySpark, NLTK, gensim, spaCy, AllenNLP; Flask, SQLAlchemy, Celery; Clickhouse, Elasticsearch, PostgreSQL; Git, Jira.
+        </ul>
+    </p>
 </div>
 </div>
 <hr>
 
-<div class="row content-row">
-<div class="col-12 col-sm-4">
-    <img src="{{ site.baseurl }}/images/qb_ios.png">
-</div>
-<div class="col-12 col-sm-8">
-    <h3>Intuit Software Engineer Intern</h3>
-    <p class="italic">June 2015 - August 2015</p>
-    <p>As an intern on the Intuit QuickBooks Mobile iOS team, I taught myself Objective-C, Swift 2, and SQL on the job. I helped pioneer my team's transition from Objective-C to Swift and the adoption of Apple's latest guidelines for universal iOS apps to accommodate multitasking in iOS 9. I also added employee time-tracking and time-sheets features to the iOS app. My work involved full stack development from database management and memory-efficiency optimizations to adaptive UI design and animations.</p>
-</div>
-</div>
-<hr>
 
 <!-- Projects -->
 <h1 class="section-title">Projects</h1>
 
 <div class="row content-row">
 <div class="col-12 col-sm-4">
-    <img src="{{ site.baseurl }}/images/ctc.png">
+    <img src="{{ site.baseurl }}/images/landmark.png">
 </div>
 <div class="col-12 col-sm-8">
-    <h3>Photo Licensing Platform</h3>
-    <p class="italic">September 2015 - present</p>
-    <p>Currently, there is no centralized platform for media consumers to easily purhcase licenses from photographers and graphic designers. Through Stanford Code the Change, I am leading a team to create a prototype web application that simplifies the process of creating and purchasing licenses for copyrighted photos and images. This proof-of-concept app was built in collaboration with the U.S. Copyright Office and the Stanford Law School. For this project, I used Python, Flask, and SQL, and then deployed the app to Heroku.</p>
-    <a href="https://copyright-license.herokuapp.com/" class="btn btn-light">
-        <i class="fas fa-external-link-square-alt"></i> Demo
-    </a>
-    <a href="https://github.com/chrisyeh96/copyright-license" class="btn btn-light">
-        <i class="fab fa-github"></i> GitHub
-    </a>
-</div>
-</div>
-<hr>
-
-<div class="row content-row">
-<div class="col-12 col-sm-4">
-    <img src="{{ site.baseurl }}/images/moodmusic.png">
-</div>
-<div class="col-12 col-sm-8">
-    <h3>Mood Music Firefox Add-on</h3>
-    <p class="italic">May 2014</p>
+    <h3>Human pulse measurement with web camera</h3>
+    <p class="italic">April 2015</p>
     <p class="note">
         <i class="fa fa-star"></i>
-        HackUCI Hackathon, Top 10 Hacks and Best Rdio Hack
+        University project
     </p>
-    <p>Mood Music is a Firefox add-on that provides users with content-relevant music that reflects the mood of the websites they visit. It uses a combination of text-extraction through Diffbot, natural language processing of mood, and integration with the Rdio API to create this Firefox add-on. The inspiration behind this lies in alleviating the burden of finding good music during a user’s browsing experience.</p>
-    <a href="https://github.com/skswbwt/bgradio" class="btn btn-light">
+    <p>Our pulse is the rate at which heart beats. As our heart pumps blood through the body, we can feel pulsing in some of the blood vessels close to the skin`s surface, such as in our head, neck or upper arm. To the human eye, no matter how long and hard you stare at your wrist or someone else’s face, you would struggle to detect a change in color. For a computer, however, the tiniest per-pixel fluctuations are easy to detect. As our heart pumps blood around body arteries swell with bright red blood, which changes the color of skin slightly. Thus we can measure accurately our heart rate. This project works by combining several techniques common in the field of computer vision.</p>
+    <a href="https://github.com/tankz0r/KPI-2016-Human-pulse-measurement" class="btn btn-light">
         <i class="fab fa-github"></i> GitHub
-    </a>
-    <a href="https://devpost.com/software/mood-music" class="btn btn-light">
-        <i class="fa fa-info-circle"></i> Project Profile
-    </a>
-    <a href="https://youtu.be/oYl99kzciQA" class="btn btn-light">
-        <i class="fab fa-youtube"></i> Presentation Video
     </a>
 </div>
 </div>
