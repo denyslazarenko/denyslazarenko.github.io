@@ -44,6 +44,24 @@ use_fontawesome: true
     <img src="images/genesis.png">
 </div>
 <div class="col-12 col-sm-8">
+    <h3><a href="https://mergerspot.de/" class="btn btn-light"> Mergerspot </a>Data Scientist</h3>
+    <p class="italic">August 2019 - Present</p>
+    
+    <p> Main responsibilities:
+        <ul>
+        <li>Automated deployment and management of containerized applications with Kubernetes and Terraform</li>
+        <li>Scale horithontaly infrastructure</li>
+        <li>Integrating monitoring system for ML</li>
+        <b>Technologies</b>:​​ Python, Docker, k8s, terraform, RabbitMQ
+        </ul>
+    </p>
+</div>
+
+
+<div class="col-12 col-sm-4">
+    <img src="images/genesis.png">
+</div>
+<div class="col-12 col-sm-8">
     <h3>Full Stack Developer</h3>
     <p class="italic">April 2019 - August 2019</p>
 WISDOM - project which was launched in 2018 as a cooperation between Technical University of Munich and Publishing Group “Holtzbrinck” - a metadata platform for visualizing and analyzing data of scientific publication. Where out of unstructured information in single articles, structured facts are extracted. However, for this, domain experts are necessary to extract this information. While this ensures high quality, it is very cost intensive and time-consuming. It is not scalable. Therefore, manual extraction should be substituted by supervised automated supervision. Project WISDOM is an interactive machine learning system which automates this process. 
@@ -69,6 +87,7 @@ retrain model, reweight parameters and provide feedback loop.</li>
 <div class="col-12 col-sm-8">
     <h3><a href="https://gen.tech/" class="btn btn-light"> Genesis Tech</a>Junior Machine Learning Engineer</h3>
     <p class="italic">June 2017 - August 2018</p>
+    I worked in a project Jiji.ng - Nigeria's number one online marketplace that enables users post free ads and get buyers faster. Jiji was founded in 2014 and within a short space of time it has grown to become the market leader in Nigeria. 
     <p> Main responsibilities:
         <ul>
         <li>Website User Text Analysis: error detection and correction of the English texts, gibberish detection, semantic analysis using NLP based approaches </li>
