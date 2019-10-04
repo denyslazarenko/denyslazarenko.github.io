@@ -41,7 +41,7 @@ use_fontawesome: true
 <div class="row content-row">
 
 <div class="col-12 col-sm-4">
-    <img src="images/genesis.png">
+    <img src="images/mergerspot">
 </div>
 <div class="col-12 col-sm-8">
     <h3>Data Scientist <a href="https://mergerspot.de/" class="btn btn-light"> Mergerspot </a></h3>
@@ -59,10 +59,10 @@ use_fontawesome: true
 
 
 <div class="col-12 col-sm-4">
-    <img src="images/genesis.png">
+    <img src="images/tum.png">
 </div>
 <div class="col-12 col-sm-8">
-    <h3>Full Stack Developer</h3>
+    <h3>Full Stack Developer <a href="https://tum.de/" class="btn btn-light"> TUM </a></h3>
     <p class="italic">April 2019 - August 2019</p>
 WISDOM - project which was launched in 2018 as a cooperation between Technical University of Munich and Publishing Group “Holtzbrinck” - a metadata platform for visualizing and analyzing data of scientific publication. Where out of unstructured information in single articles, structured facts are extracted. However, for this, domain experts are necessary to extract this information. While this ensures high quality, it is very cost intensive and time-consuming. It is not scalable. Therefore, manual extraction should be substituted by supervised automated supervision. Project WISDOM is an interactive machine learning system which automates this process. 
     <p> Main responsibilities:
