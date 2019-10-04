@@ -36,16 +36,35 @@ use_fontawesome: true
 <hr>
 
 <!-- Experience -->
-<h1 class="section-title">Experience</h1>
+<h1 class="section-title">Work Experience</h1>
 
 <div class="row content-row">
+
+<div class="col-12 col-sm-4">
+    <img src="images/genesis.png">
+</div>
+<div class="col-12 col-sm-8">
+    <h3>Full Stack Developer</h3>
+    <p class="italic">April 2019 - August 2019</p>
+    <p> Main responsibilities:
+        <ul>
+      <li>Participated in specification, design, implementation and support of ML end-to-end pipeline which
+retrain model, reweight parameters and provide feedback loop.</li>
+      <li>Developed backend and frontend. Worked with Flask back-end web application framework.</li> 
+      <li>Broadened knowledge of HTTP standards, API best practices, REST, web security and authentication.</li>
+      <li>Improvement of Automatic Information Extraction using Dependency Parsers from the scientific papers (~10% growth).</li>
+        <b>Technologies</b>:​​ Docker, Flask, Vue.js, MongoDB, StanfordNLP
+        </ul>
+    </p>
+</div>
+
 <div class="col-12 col-sm-4">
     <img src="images/genesis.png">
 </div>
 <div class="col-12 col-sm-8">
     <h3><a href="https://gen.tech/" class="btn btn-light"> Genesis Tech</a>Junior Machine Learning Engineer</h3>
     <p class="italic">June 2017 - August 2018</p>
-    <p> Main project:
+    <p> Main responsibilities:
         <ul>
         <li>Website User Text Analysis: error detection and correction of the English texts, gibberish detection, semantic analysis using NLP based approaches </li>
         <li>Improvement of advert auto-moderation system (10% growth): implemented models for multi-class classification of pictures and texts using Deep Learning Neural Networks. </li>
