@@ -46,6 +46,7 @@ use_fontawesome: true
 <div class="col-12 col-sm-8">
     <h3>Full Stack Developer</h3>
     <p class="italic">April 2019 - August 2019</p>
+WISDOM - project which was launched in 2018 as a cooperation between Technical University of Munich and Publishing Group “Holtzbrinck” - a metadata platform for visualizing and analyzing data of scientific publication. Where out of unstructured information in single articles, structured facts are extracted. However, for this, domain experts are necessary to extract this information. While this ensures high quality, it is very cost intensive and time-consuming. It is not scalable. Therefore, manual extraction should be substituted by supervised automated supervision. Project WISDOM is an interactive machine learning system which automates this process. 
     <p> Main responsibilities:
         <ul>
       <li>Participated in specification, design, implementation and support of ML end-to-end pipeline which
@@ -56,7 +57,11 @@ retrain model, reweight parameters and provide feedback loop.</li>
         <b>Technologies</b>:​​ Docker, Flask, Vue.js, MongoDB, StanfordNLP
         </ul>
     </p>
+     <a href="https://drive.google.com/file/d/1pjNF23L06DOhLyrhXl_eAR-LtB7kaOcC/view?usp=sharing" class="btn btn-light">
+        <i class="fa fa-file"></i> Presentation
+    </a>
 </div>
+
 
 <div class="col-12 col-sm-4">
     <img src="images/genesis.png">
