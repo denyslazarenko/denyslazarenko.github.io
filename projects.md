@@ -44,7 +44,7 @@ use_fontawesome: true
     <img src="images/genesis.png">
 </div>
 <div class="col-12 col-sm-8">
-    <h3><a href="https://mergerspot.de/" class="btn btn-light"> Mergerspot </a>Data Scientist</h3>
+    <h3>Data Scientist <a href="https://mergerspot.de/" class="btn btn-light"> Mergerspot </a></h3>
     <p class="italic">August 2019 - Present</p>
     
     <p> Main responsibilities:
@@ -85,7 +85,7 @@ retrain model, reweight parameters and provide feedback loop.</li>
     <img src="images/genesis.png">
 </div>
 <div class="col-12 col-sm-8">
-    <h3><a href="https://gen.tech/" class="btn btn-light"> Genesis Tech</a>Junior Machine Learning Engineer</h3>
+    <h3>Junior Machine Learning Engineer <a href="https://gen.tech/" class="btn btn-light"> Genesis Tech</a></h3>
     <p class="italic">June 2017 - August 2018</p>
     I worked in a project Jiji.ng - Nigeria's number one online marketplace that enables users post free ads and get buyers faster. Jiji was founded in 2014 and within a short space of time it has grown to become the market leader in Nigeria. 
     <p> Main responsibilities:
