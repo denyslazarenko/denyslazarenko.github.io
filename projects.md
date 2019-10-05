@@ -19,7 +19,7 @@ use_fontawesome: true
     In particular:
         <ul>
             <li> consider different models that are used for texts classification </li>
-            <li> compare performance of Deep Learning models </li>
+            <li> compare performance of Deep Learning arhitectures </li>
             <li> compare efficiency of CNNs vs RNNs for NLP related tasks </li>
         </ul>
     </p>
@@ -49,8 +49,8 @@ use_fontawesome: true
     
     <p> Main responsibilities:
         <ul>
-        <li>Automated deployment and management of containerized applications with Kubernetes and Terraform</li>
-        <li>Scale horithontaly infrastructure</li>
+        <li>Taught myself Cloud Computing, Kubernetes and Terraform. Automated deployment and management of containerized     microservices</li>
+        <li>Continuous Integration - GitLab</li>
         <li>Integrating monitoring system for ML</li>
         <b>Technologies</b>:​​ Python, Docker, k8s, terraform, RabbitMQ
         </ul>
@@ -67,6 +67,7 @@ use_fontawesome: true
 WISDOM - project which was launched in 2018 as a cooperation between Technical University of Munich and Publishing Group “Holtzbrinck” - a metadata platform for visualizing and analyzing data of scientific publication. Where out of unstructured information in single articles, structured facts are extracted. However, for this, domain experts are necessary to extract this information. While this ensures high quality, it is very cost intensive and time-consuming. It is not scalable. Therefore, manual extraction should be substituted by supervised automated supervision. Project WISDOM is an interactive machine learning system which automates this process. 
     <p> Main responsibilities:
         <ul>
+      <li>Built a full-stack web app and launched it.</li>
       <li>Participated in specification, design, implementation and support of ML end-to-end pipeline which
 retrain model, reweight parameters and provide feedback loop.</li>
       <li>Developed backend and frontend. Worked with Flask back-end web application framework.</li> 
