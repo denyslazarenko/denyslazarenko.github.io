@@ -41,7 +41,7 @@ use_fontawesome: true
 <div class="row content-row">
 
 <div class="col-12 col-sm-4">
-    <img src="images/mergerspot">
+    <img src="images/mergerspot.png">
 </div>
 <div class="col-12 col-sm-8">
     <h3>Data Scientist <a href="https://mergerspot.de/" class="btn btn-light"> Mergerspot </a></h3>
