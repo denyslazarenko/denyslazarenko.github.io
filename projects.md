@@ -40,7 +40,7 @@ use_fontawesome: true
 
 <div class="row content-row">
 
-<div class="col-12 col-sm-4">
+<div class="col-10 col-sm-4">
     <img src="images/mergerspot.png">
 </div>
 <div class="col-12 col-sm-8">
