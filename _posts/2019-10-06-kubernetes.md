@@ -64,4 +64,18 @@ APISERVER=$(kubectl config view -o jsonpath="{.clusters[?(@.name==\"$CLUSTER_NAM
 TOKEN=$(kubectl get secrets -o jsonpath="{.items[?(@.metadata.annotations['kubernetes\.io/service-account\.name']=='default')].data.token}"|base64 -d)
 ```
 In order to deal with `403` Error follow next steps:
-https://github.com/papudatta/kubernetes_kubeadm
+ - create a rbac clusterRole(you need to have permission in order to do it)
+ ```yaml
+ apiVersion: rbac.authorization.k8s.io/v1beta1
+kind: ClusterRoleBinding
+metadata:
+  name: service-default-experimental
+subjects:
+  - kind: ServiceAccount
+    name: default
+    namespace: default
+roleRef:
+  kind: ClusterRole
+  name: cluster-admin
+  apiGroup: rbac.authorization.k8s.io
+ ```
