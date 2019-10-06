@@ -40,40 +40,40 @@ use_fontawesome: true
 
 <div class="row content-row">
 
-<div class="col-12 col-sm-4">
+<div class="col-12 col-sm-4 image-wrapper">
     <img src="images/mergerspot_.jpg">
 </div>
 <div class="col-12 col-sm-8">
     <h3>Data Scientist <a href="https://mergerspot.de/" class="btn btn-light"> Mergerspot </a></h3>
     <p class="italic">August 2019 - Present</p>
-    
+Mergerspot provides a market research software and tools for an evaluation on company level by visualizing key investment criteria. Additionally, they enable analysts to understand market dynamics including competitors, trends within the market.
     <p> Main responsibilities:
         <ul>
-        <li>Taught myself Cloud Computing, Kubernetes and Terraform. Automated deployment and management of containerized     microservices</li>
-        <li>Continuous Integration - GitLab</li>
-        <li>Integrating monitoring system for ML</li>
-        <b>Technologies</b>:​​ Python, Docker, k8s, terraform, RabbitMQ
+        <li>Broadened knowledge of HTTP standards, API best practices, REST, web security and authentication</li>
+        <li>Taught myself Cloud Computing, Kubernetes, Terraform and automated deployment and management of containerized microservices(decreased month price for GCP ~5 times)</li>
+        <li>Continuous Integration with GitLab</li>
+        <li>Integrated monitoring system for ML models</li>
+        <b>Technologies</b>:​​ Terraform, K&S, Docker; RabbitMQ, Consul.
         </ul>
     </p>
 </div>
 
 
-<div class="col-12 col-sm-4">
+<div class="col-12 col-sm-4 image-wrapper">
     <img src="images/tum.png">
 </div>
 <div class="col-12 col-sm-8">
     <h3>Full Stack Developer <a href="https://tum.de/" class="btn btn-light"> TUM </a></h3>
     <p class="italic">April 2019 - August 2019</p>
-WISDOM - project which was launched in 2018 as a cooperation between Technical University of Munich and Publishing Group “Holtzbrinck” - a metadata platform for visualizing and analyzing data of scientific publication. Where out of unstructured information in single articles, structured facts are extracted. However, for this, domain experts are necessary to extract this information. While this ensures high quality, it is very cost intensive and time-consuming. It is not scalable. Therefore, manual extraction should be substituted by supervised automated supervision. Project WISDOM is an interactive machine learning system which automates this process. 
+WISDOM - a project which was launched in 2018 as a cooperation between Technical University of Munich and Publishing Group “Holtzbrinck” - a metadata platform for visualizing and analyzing data of scientific publication. Where out of unstructured information in single articles, structured facts are extracted. However, for this, domain experts are necessary to extract this information. While this ensures high quality, it is very cost-intensive and time-consuming. It is not scalable. Therefore, manual extraction should be substituted by supervised automated supervision. Project WISDOM is an interactive machine learning system that automates this process. 
     <p> Main responsibilities:
         <ul>
-      <li>Built a full-stack web app and launched it.</li>
-      <li>Participated in specification, design, implementation and support of ML end-to-end pipeline which
-retrain model, reweight parameters and provide feedback loop.</li>
+      <li>Participated in design implementation and support of ML end-to-end pipeline which retrains
+model, reweight parameters and provides a feedback loop.</li>
+      <li>Built a full-stack web app and launched it. Developed backend and frontend.</li>
       <li>Developed backend and frontend. Worked with Flask back-end web application framework.</li> 
-      <li>Broadened knowledge of HTTP standards, API best practices, REST, web security and authentication.</li>
-      <li>Improvement of Automatic Information Extraction using Dependency Parsers from the scientific papers (~10% growth).</li>
-        <b>Technologies</b>:​​ Docker, Flask, Vue.js, MongoDB, StanfordNLP
+      <li>Improved an Automatic Information Extraction using Dependency Parsers from the scientific papers (~10% growth).</li>
+        <b>Technologies</b>:​​ spaCy, NLTK, StanfordNLP; Flask, Vue.js; MongoDB.
         </ul>
     </p>
      <a href="https://drive.google.com/file/d/1pjNF23L06DOhLyrhXl_eAR-LtB7kaOcC/view?usp=sharing" class="btn btn-light">
@@ -82,7 +82,7 @@ retrain model, reweight parameters and provide feedback loop.</li>
 </div>
 
 
-<div class="col-12 col-sm-4">
+<div class="col-12 col-sm-4 image-wrapper">
     <img src="images/genesis.png">
 </div>
 <div class="col-12 col-sm-8">
