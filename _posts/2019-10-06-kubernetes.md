@@ -22,7 +22,7 @@ Normally, services are available only locally. In order to make them available f
 kubectl expose svc rabbitmq --port=9376 --target-port=9376 --type=LoadBalancer --name=rabbitmq-lb
 ```
 or equivalently with k8s:
-```
+```yaml
 apiVersion: v1
 kind: Service
 metadata:
@@ -40,19 +40,18 @@ spec:
       port: 5672
       targetPort: 5672
   type: LoadBalancer
-  ```
+```
 
-  #### Remotely executing commands in running containers
-  ```$ kubectl exec kubia-7nog1 -- curl -s http://10.111.249.153```
+#### Remotely executing commands in running containers
+```$ kubectl exec kubia-7nog1 -- curl -s http://10.111.249.153```
   
-  #### [Python kubernetes_client](https://github.com/kubernetes-client/python/tree/master/kubernetes)
-  
- [Blog post: How to create k8s job with Python](https://blog.pythian.com/how-to-create-kubernetes-jobs-with-python/)
+#### [Python kubernetes_client](https://github.com/kubernetes-client/python/tree/master/kubernetes)  
+[Blog post: How to create k8s job with Python](https://blog.pythian.com/how-to-create-kubernetes-jobs-with-python/)
  
  In order to connect to the k8s cluster it is necessary to have `API_TOKEN`. 
  
- ```
-  # Check all possible clusters, as you .KUBECONFIG may have multiple contexts:
+```bash
+# Check all possible clusters, as you .KUBECONFIG may have multiple contexts:
 kubectl config view -o jsonpath='{"Cluster name\tServer\n"}{range .clusters[*]}{.name}{"\t"}{.cluster.server}{"\n"}{end}'
  
 # Select name of cluster you want to interact with from above output:
