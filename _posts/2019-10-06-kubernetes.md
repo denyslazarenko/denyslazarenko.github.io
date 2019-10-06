@@ -8,7 +8,7 @@ excerpt: Here I collected information which was helpful for me to learn about k8
 #### References
   * Book: Kubernetes in Action by Marko Lukša
   * [FreeCodeCamp article about basic microservices deployment](https://www.freecodecamp.org/news/learn-kubernetes-in-under-3-hours-a-detailed-guide-to-orchestrating-containers-114ff420e882/)
-  * [Kubernetes By Example: collectio of mostly used components](http://kubernetesbyexample.com/)
+  * [Kubernetes By Example: collection of frequently used components](http://kubernetesbyexample.com/)
   * [Blog posts about k8s and ML](https://mlinproduction.com/k8s-pods/)
   * [New free video course from VMware](https://kubernetes.academy/)
   * Linux Academy courses
