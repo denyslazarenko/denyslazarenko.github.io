@@ -81,8 +81,9 @@ roleRef:
   apiGroup: rbac.authorization.k8s.io
  ```
  
- #### GKE resource limitation
- https://github.com/kubernetes/kubernetes/issues/33777#issuecomment-426487268
+ #### GKE limitation
+  - It is not possible to run nodes in differnet regions. You need to have different clusters for different regions and then use `Istio` to coordinate it. 
+  - https://github.com/kubernetes/kubernetes/issues/33777#issuecomment-426487268
  
  #### GKE pools 
  A node pool is simply a “pool,” of machines with the same configuration. This feature allows the creation of heterogeneous GKE clusters.
