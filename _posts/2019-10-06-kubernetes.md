@@ -7,6 +7,7 @@ excerpt: Here I collected information which was helpful for me to learn about k8
 
 #### References
   * Book: Kubernetes in Action by Marko Lukša
+  * [Extensive guide how to set up GCP and run k8s and terraform scripts](https://medium.com/faun/google-kubernetes-engine-explain-like-im-five-1890e550c099)
   * [FreeCodeCamp article about basic microservices deployment](https://www.freecodecamp.org/news/learn-kubernetes-in-under-3-hours-a-detailed-guide-to-orchestrating-containers-114ff420e882/)
   * [Kubernetes By Example: collection of frequently used components](http://kubernetesbyexample.com/)
   * [Blog posts about k8s and ML](https://mlinproduction.com/k8s-pods/)
@@ -79,3 +80,9 @@ roleRef:
   name: cluster-admin
   apiGroup: rbac.authorization.k8s.io
  ```
+ 
+ #### GKE resource limitation
+ https://github.com/kubernetes/kubernetes/issues/33777#issuecomment-426487268
+ 
+ #### GKE pools 
+ A node pool is simply a “pool,” of machines with the same configuration. This feature allows the creation of heterogeneous GKE clusters.
