@@ -66,7 +66,7 @@ TOKEN=$(kubectl get secrets -o jsonpath="{.items[?(@.metadata.annotations['kuber
 ```
 In order to deal with `403` Error follow next steps:
 - create a rbac clusterRole(you need to have permission in order to do it)
-```yaml
+```
 apiVersion: rbac.authorization.k8s.io/v1beta1
 kind: ClusterRoleBinding
 metadata:
