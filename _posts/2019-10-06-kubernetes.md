@@ -99,3 +99,8 @@ kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | gre
 kubectl proxy
 ```
 [proxy location](http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#!/login)
+
+#### ML tools based on k8s
+- https://www.pachyderm.io/
+- https://www.kubeflow.org/
+- https://github.com/intro-to-ml-with-kubeflow/intro-to-ml-with-kubeflow-examples
