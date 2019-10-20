@@ -16,6 +16,31 @@ excerpt: Here I collected information which was helpful for me to learn about k8
      - [Helm deep dive](https://linuxacademy.com/course/helm-deep-dive-part-1/)
      - [Practical course: Learn Kubernetes by Doing](https://linuxacademy.com/course/learn-kubernetes-by-doing/)
 
+#### Deploy microservice
+1. Run the following command to authenticate yourself with the cluster (For details, see https://cloud.google.com/kubernetes-engine/docs/how-to/cluster-access-for-kubectl?hl=de)    
+```gcloud container clusters get-credentials mergerspot-dev-cluster --zone europe-west3-a --project mergerspot-dev```
+2. Type kubectl get svc
+3. Clone the repository   
+     3.1. Navigate to the root directory and run the following commands. You should then be able to access the microservice locally at http://localhost:5001/health
+     3.2. Navigate to the client directory and run the following commands. You should then be able to access the frontend locally at http://localhost:5001
+``` 
+npm install
+npm run build
+python3 app.py
+```
+4. Create the ‘k8s-deployment-dev.yaml’    
+    `image: 'eu.gcr.io/<project-name>/k8s-deployment-<name>:0.1'`
+5. Build the docker image locally by running the following commands in the repository root directory
+```
+docker login -u oauth2accesstoken -p "$(gcloud auth print-access-token)" https://eu.gcr.io
+docker build -t eu.gcr.io/<project-name>/k8s-deployment-<name>:0.1 .
+```
+6. Push the docker image to the Google Container Registry (gcr)    
+```docker push eu.gcr.io/<project-name>/k8s-deployment-<name>:0.1```
+7. Once the docker image is pushed run the following command from the root directory of the repository   
+```kubectl apply -f k8s-deployment-dev.yaml```
+8. Get the public endpoint of your deployment by running (it may take a few minutes to set up the first time)    
+```kubectl get svc```
 
 #### Make service be visible externally: 
 Normally, services are available only locally. In order to make them available from outside we need additional service LoadBalancer, where we need to specify appropriate port and name.   
