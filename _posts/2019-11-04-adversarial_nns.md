@@ -1,3 +1,10 @@
+---
+title: Adversarial NNs
+layout: post
+use_toc: true
+excerpt: Here I collected information about recent developments in Adversarial NNs
+---
+
 ### Topics
 - [Certification for deep learning model](https://files.sri.inf.ethz.ch/website/papers/sp2018.pdf) (Adversarial ML)
 - [Domain Adversarial Training](https://arxiv.org/pdf/1505.07818.pdf) (Meta Learning)
