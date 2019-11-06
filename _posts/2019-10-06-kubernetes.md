@@ -16,6 +16,15 @@ excerpt: Here I collected information which was helpful for me to learn about k8
      - [Helm deep dive](https://linuxacademy.com/course/helm-deep-dive-part-1/)
      - [Practical course: Learn Kubernetes by Doing](https://linuxacademy.com/course/learn-kubernetes-by-doing/)
 
+#### Useful tools for k8s 
+- [kubectx - switch between k8s clusters](https://github.com/ahmetb/kubectx)
+- [kubebox - Terminal and Web console for Kubernetes](https://github.com/astefanutti/kubebox)
+
+#### ML tools based on k8s
+- https://www.pachyderm.io/
+- https://www.kubeflow.org/
+- https://github.com/intro-to-ml-with-kubeflow/intro-to-ml-with-kubeflow-examples
+
 #### Deploy microservice
 1. Run the following command to authenticate yourself with the cluster (For details, see https://cloud.google.com/kubernetes-engine/docs/how-to/cluster-access-for-kubectl?hl=de)    
 ```gcloud container clusters get-credentials mergerspot-dev-cluster --zone europe-west3-a --project mergerspot-dev```
@@ -125,17 +134,9 @@ kubectl proxy
 ```
 [proxy location](http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#!/login)
 
-#### Istio
+#### LoadBalancer Timeout
 By default in k8s LoadBalancer there is a timeout in 30s, which is somethimes to little. If you want to configure your own timeout there are several ways: 
 1. [GCP special service which is in beta phase](https://cloud.google.com/kubernetes-engine/docs/how-to/configure-backend-service)
 2. [Istio](https://istio.io/) - it can do much more than timeout configuration.  
 - [Series of blog posts about Istio](https://rinormaloku.com/getting-started-istio/)
 
-#### Useful tools for k8s 
-- [kubectx - switch between k8s clusters](https://github.com/ahmetb/kubectx)
-- [kubebox - Terminal and Web console for Kubernetes](https://github.com/astefanutti/kubebox)
-
-#### ML tools based on k8s
-- https://www.pachyderm.io/
-- https://www.kubeflow.org/
-- https://github.com/intro-to-ml-with-kubeflow/intro-to-ml-with-kubeflow-examples
