@@ -140,3 +140,17 @@ By default in k8s LoadBalancer there is a timeout in 30s, which is somethimes to
 2. [Istio](https://istio.io/) - it can do much more than timeout configuration.  
 - [Series of blog posts about Istio](https://rinormaloku.com/getting-started-istio/)
 
+#### Autoscalling 
+##### Resources:
+- [Cluster/Horizontal/Vertical Autoscalling(using build in GCP tools)](https://kubernetes.io/blog/2016/07/autoscaling-in-kubernetes/)
+- [Autoscaling Deployments with External Metrics(Next step)](https://cloud.google.com/kubernetes-engine/docs/tutorials/external-metrics-autoscaling)
+- [Kubernetes Autoscaling 101](https://medium.com/magalix/kubernetes-autoscaling-101-cluster-autoscaler-horizontal-pod-autoscaler-and-vertical-pod-2a441d9ad231)
+- [Vertical Pod Autoscaler](https://github.com/kubernetes/community/blob/master/contributors/design-proposals/autoscaling/vertical-pod-autoscaler.md)
+- [Practical explanation of Autoscalling](https://codeburst.io/practical-guide-to-kubernetes-node-scaling-5a7fc3499a56)
+
+#### Kubernetes Autoscaling Building Blocks
+Effective kubernetes auto-scaling requires coordination between two layers of scalability:   
+(1) Pods layer autoscalers, this includes Horizontal Pod Autoscaler (HPA) and Vertical Pod Autoscaler (VPA); both scale available resources for your containers
+(2) Cluster level scalability, which managed by the Cluster Autoscaler (CA); it scales up or down the number of nodes inside your cluster.
+
+
