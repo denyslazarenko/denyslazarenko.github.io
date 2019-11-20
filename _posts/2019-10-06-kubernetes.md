@@ -100,20 +100,20 @@ TOKEN=$(kubectl get secrets -o jsonpath="{.items[?(@.metadata.annotations['kuber
 ```
 In order to deal with `403` Error follow next steps:
 - create a rbac clusterRole(you need to have permission in order to do it)
-```
-apiVersion: rbac.authorization.k8s.io/v1beta1
-kind: ClusterRoleBinding
-metadata:
- name: service-default-experimental
-subjects:
- - kind: ServiceAccount
-   name: default
-   namespace: default
-roleRef:
- kind: ClusterRole
- name: cluster-admin
- apiGroup: rbac.authorization.k8s.io
-```
+     ```yaml
+     apiVersion: rbac.authorization.k8s.io/v1beta1
+     kind: ClusterRoleBinding
+     metadata:
+      name: service-default-experimental
+     subjects:
+      - kind: ServiceAccount
+        name: default
+        namespace: default
+     roleRef:
+      kind: ClusterRole
+      name: cluster-admin
+      apiGroup: rbac.authorization.k8s.io
+     ```
 
 #### GKE limitation
  - It is not possible to run nodes in differnet regions. You need to have different clusters for different regions and then use `Istio` to coordinate it. 
