@@ -26,6 +26,9 @@ excerpt: Here I collected information which was helpful for me to learn about k8
 - https://github.com/intro-to-ml-with-kubeflow/intro-to-ml-with-kubeflow-examples
 
 #### Deploy microservice
+0. Install gcloud(i.e. through snap)
+     0.1. gcloud auth login 
+     0.2. Enable option to push into the container repository `sudo docker login -u oauth2accesstoken -p "$(gcloud auth print-access-token)" https://eu.gcr.io`
 1. Run the following command to authenticate yourself with the cluster (For details, see https://cloud.google.com/kubernetes-engine/docs/how-to/cluster-access-for-kubectl?hl=de)    
 ```gcloud container clusters get-credentials mergerspot-dev-cluster --zone europe-west3-a --project mergerspot-dev```
 2. Type kubectl get svc
