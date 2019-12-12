@@ -156,4 +156,7 @@ Effective kubernetes auto-scaling requires coordination between two layers of sc
 (1) Pods layer autoscalers, this includes Horizontal Pod Autoscaler (HPA) and Vertical Pod Autoscaler (VPA); both scale available resources for your containers
 (2) Cluster level scalability, which managed by the Cluster Autoscaler (CA); it scales up or down the number of nodes inside your cluster.
 
+#### Build your own Cloud:
+- [MinIO](https://min.io/)
+- [Ceph](https://ceph.io/)
 
