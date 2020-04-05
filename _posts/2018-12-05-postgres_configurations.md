@@ -5,6 +5,26 @@ use_toc: true
 excerpt: Here is a brief summary of how I configured PostgreSQL database.
 ---
 
+#### Delete blocked queries:
+1. Find query which is marcked as active:
+```sql
+SELECT
+  pid,
+  now() - pg_stat_activity.query_start AS duration,
+  query,
+  state
+FROM pg_stat_activity
+WHERE (now() - pg_stat_activity.query_start) > interval '5 minutes';
+```
+2. Kill it:
+```sql
+SELECT pg_cancel_backend(__pid__);
+```
+3. Edge case(DONT DO IT):
+```sql
+SELECT pg_terminate_backend(__pid__);
+```
+
 #### How to compile TPC-H dataset 
 - http://myfpgablog.blogspot.com/2016/08/tpc-h-queries-on-postgresql.html
 
