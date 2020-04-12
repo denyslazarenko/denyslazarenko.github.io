@@ -21,7 +21,7 @@ excerpt: Tools for a scientific research
   - In menu: Preferences -> Browse Packages -> User -> pandoc.sublime-build
 5. In order to execute the `pandoc` press `Cmnd+B` 
 
-## How to keep order with Papers:
+## How to keep order of papers:
 - There is a tool called [Mendeley](https://www.mendeley.com/newsfeed) which helps to keep order of all papers in one place. There is a posibility to connect it with cloud as well as to use extension in a browser. 
 ![image](https://user-images.githubusercontent.com/13698885/79067231-2edbab00-7cbe-11ea-9f67-76697bc30874.png)
 
