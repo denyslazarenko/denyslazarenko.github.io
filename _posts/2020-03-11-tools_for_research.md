@@ -23,6 +23,7 @@ excerpt: Tools for a scientific research
 
 ## How to keep order of papers:
 - There is a tool called [Mendeley](https://www.mendeley.com/newsfeed) which helps to keep order of all papers in one place. There is a posibility to connect it with cloud as well as to use extension in a browser. 
+- Tutorial how to use it efficiently is [here](https://www.youtube.com/watch?v=pxgwBZMGq8k)
 ![image](https://user-images.githubusercontent.com/13698885/79067231-2edbab00-7cbe-11ea-9f67-76697bc30874.png)
 
 ## How to use jupyter notebooks efficiently:
