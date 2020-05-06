@@ -33,3 +33,4 @@ excerpt: Tools for a scientific research
 	* version control of data with DVC
 	* deployment
 - [How to run an MLflow tracking server on AWS EC2](https://medium.com/@alexanderneshitov/how-to-run-an-mlflow-tracking-server-on-aws-ec2-d7afd0ac8008)
+- [Jupyter notebook to PDF extension](https://github.com/betatim/notebook-as-pdf)
