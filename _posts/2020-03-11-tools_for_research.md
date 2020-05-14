@@ -34,3 +34,6 @@ excerpt: Tools for a scientific research
 	* deployment
 - [How to run an MLflow tracking server on AWS EC2](https://medium.com/@alexanderneshitov/how-to-run-an-mlflow-tracking-server-on-aws-ec2-d7afd0ac8008)
 - [Jupyter notebook to PDF extension](https://github.com/betatim/notebook-as-pdf)
+
+### Create and Maintain python package:
+- https://package-helper.readthedocs.io/en/latest/readme.html
