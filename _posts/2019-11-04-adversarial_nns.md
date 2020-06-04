@@ -1,9 +1,10 @@
 ---
-title: Recent Developments in AI
+title: Recent Developments in AI 
 layout: post
 use_toc: true
-excerpt: Here I collected information about recent developments in AI:
+excerpt: Here I collected information about recent developments in AI
 ---
+
 
 ### Adversarial NNs:
 - [Certification for deep learning model](https://files.sri.inf.ethz.ch/website/papers/sp2018.pdf) (Adversarial ML)
