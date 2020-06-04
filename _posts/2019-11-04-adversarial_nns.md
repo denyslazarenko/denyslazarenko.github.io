@@ -62,4 +62,4 @@ excerpt: Here I collected information about recent developments in AI:
 - Compressed Sensing kNN
 
 ### Explainable AI:
-- ToDo
+- [Report: State of the art](https://www.telecom-paris.fr/explainable-artificial-intelligence)
