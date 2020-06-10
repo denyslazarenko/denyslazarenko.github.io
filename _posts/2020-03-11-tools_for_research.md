@@ -35,5 +35,11 @@ excerpt: Tools for a scientific research
 - [How to run an MLflow tracking server on AWS EC2](https://medium.com/@alexanderneshitov/how-to-run-an-mlflow-tracking-server-on-aws-ec2-d7afd0ac8008)
 - [Jupyter notebook to PDF extension](https://github.com/betatim/notebook-as-pdf)
 
-### Create and Maintain python package:
+## Debugging performance
+- [PyInstrument](https://github.com/joerick/pyinstrument/) 
+	- measures time necessary for every slow function
+	![image](https://user-images.githubusercontent.com/13698885/84251135-39bf8a00-ab0d-11ea-864e-5f175eddc545.png)
+- [Blog which collects useful tools](https://pythonspeed.com/articles/beyond-cprofile/)
+
+## Create and Maintain python package:
 - https://package-helper.readthedocs.io/en/latest/readme.html
