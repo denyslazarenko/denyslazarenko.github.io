@@ -9,24 +9,28 @@ excerpt: Ways to speed up a python program
 ### Python debugging performance 
 - [Blog which collects useful tools](https://pythonspeed.com/articles/beyond-cprofile/)
 - [PyInstrument](https://github.com/joerick/pyinstrument/) 
-```python
-from pyinstrument import Profiler
 
-profiler = Profiler()
-profiler.start()
+  ```python
+  from pyinstrument import Profiler
 
-tm = TMI()
-tm.fit(tree_100_0, tree_100_1)
-profiler.stop()
+  profiler = Profiler()
+  profiler.start()
 
-print(profiler.output_text(unicode=True, color=True))
-```
+  tm = TMI()
+  tm.fit(tree_100_0, tree_100_1)
+  profiler.stop()
+
+  print(profiler.output_text(unicode=True, color=True))
+  ```
+
 - [cProfiler](https://ipython-books.github.io/42-profiling-your-code-easily-with-cprofile-and-ipython/)
-```
-%%prun -s tottime -q -l 20 -T prun0
 
-print(open('prun0', 'r').read())
-```
+  ```
+  %%prun -s tottime -q -l 20 -T prun0
+
+  print(open('prun0', 'r').read())
+  ```
+  
 The %prun and %%prun magic commands accept multiple optional options (type %prun? for more details). 
 In the example, 
 -s allows us to sort the report by a particular column, -q to suppress (quell) the pager output (which is useful when we want to integrate the output in a notebook), 
