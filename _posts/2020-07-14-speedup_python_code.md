@@ -42,6 +42,7 @@ This database-like object contains all information about the profiling and can b
 
 ## 2. Cython
 - [Online Course from oreilly](https://learning.oreilly.com/videos/learning-cython/)
+- [Summary of hot to use Cython](https://byumcl.bitbucket.io/bootcamp2014/_downloads/AllWeek7.pdf)
 - Sample code of usage from [scikit-learn ](https://github.com/scikit-learn/scikit-learn/blob/master/sklearn/metrics/cluster/_expected_mutual_info_fast.pyx)
 - Before starting make sure that `sudo apt-get install g++`
 - Use magic method in jupyter nobooks for fast prototyping. Flag -a means to give analysis which shows parts which may be optimized `%%cython -a`
