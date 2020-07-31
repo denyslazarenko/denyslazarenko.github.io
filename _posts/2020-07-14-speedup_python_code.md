@@ -47,6 +47,8 @@ This database-like object contains all information about the profiling and can b
 - Before starting make sure that `sudo apt-get install g++`
 - Use magic method in jupyter nobooks for fast prototyping. Flag -a means to give analysis which shows parts which may be optimized `%%cython -a`
 - In order to compile the file and later on import it in your code use: `python setup.py build_ext --inplace`
+- [OpenMP Cython Jupyter notebook example](https://homes.cs.washington.edu/~jmschr/lectures/Parallel_Processing_in_Python.html)
+
 
 ## 3. Multithreading in Python
 - [Use shared recources instead of copying](https://research.wmz.ninja/articles/2018/03/on-sharing-large-arrays-when-using-pythons-multiprocessing.html)
