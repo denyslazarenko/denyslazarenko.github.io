@@ -8,7 +8,10 @@ excerpt: Tools for a scientific research
 ## How to setup simple markdown converter to pdf in Sublime:
 ![image](https://user-images.githubusercontent.com/13698885/78026067-5a27d700-735b-11ea-92b5-fe19884636e6.png)
 
-1. Install `pandoc`
+1. Install `pandoc` and `pdflatex` 
+```
+sudo apt-get install texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra
+```
 2. Start `Sublime` go to menu: Tools -> Build System -> New Build System 
 3. In the New window `pandoc.sublime-build` put the following:
 ```
