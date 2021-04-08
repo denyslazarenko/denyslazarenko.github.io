@@ -43,3 +43,4 @@ sudo apt-get install texlive-latex-base texlive-fonts-recommended texlive-fonts-
 
 ## Create and Maintain python package:
 - https://package-helper.readthedocs.io/en/latest/readme.html
+- https://antonz.org/python-packaging/
