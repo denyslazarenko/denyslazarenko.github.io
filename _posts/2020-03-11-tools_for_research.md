@@ -24,6 +24,9 @@ sudo apt-get install texlive-latex-base texlive-fonts-recommended texlive-fonts-
   - In menu: Preferences -> Browse Packages -> User -> pandoc.sublime-build
 5. In order to execute the `pandoc` press `Cmnd+B` 
 
+## How to check grammar in your text:
+- [Language Tool](https://github.com/languagetool-org/languagetool) with the [DB of n-gramms](https://languagetool.org/download/ngram-data/) in 5 different languages(works not worth than Grammarly, can be connected to the IDE). 
+
 ## SVG draw tool for papers and posters:
 - [Inkscape](https://inkscape.org/)
 
