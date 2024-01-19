@@ -10,9 +10,7 @@ excerpt: Unlocking AHA Moments
 Have you ever felt overwhelmed while using a sophisticated web platform, like Google Cloud, due to its plethora of options? 
 This common challenge hinders many users from fully utilizing these powerful tools. 
 
-<div class="col-12 col-sm-4 image-wrapper">
-    <img src="{{ site.baseurl }}/images/Unlocking_AHA_Moments/gcp.png">
-</div>
+<img src="{{ site.baseurl }}/images/Unlocking_AHA_Moments/gcp.png">
 
 The way better experience could the following: you have a chat assistant which would 
 ask you about your goal and then would guide you through the process of achieving it or even 
@@ -43,16 +41,16 @@ or even automation that makes clicks over the website.
 - Our platform supports various formats, including videos, chats, and automated tours.
 - Leveraging a rich database of actions, we can automate tasks based on user input, like integrating Notion seamlessly.
 
-<p align="center">
-  <img src="./images/Unlocking_AHA_Moments/chrome_extension.png" alt="Image 1" style="width: 30%;"/>
-  <img src="./images/Unlocking_AHA_Moments/guide.png" alt="Image 2" style="width: 30%;"/>
-  <img src="./images/Unlocking_AHA_Moments/click_tour.png" alt="Image 3" style="width: 30%;"/>
-</p>
+<div>
+    <img src="{{ site.baseurl }}/images/Unlocking_AHA_Moments/chrome_extension.png" alt="Image 1" style="width: 30%;"/>
+    <img src="{{ site.baseurl }}/images/Unlocking_AHA_Moments/guide.png" alt="Image 2" style="width: 30%;"/>
+    <img src="{{ site.baseurl }}/images/Unlocking_AHA_Moments/click_tour.png" alt="Image 3" style="width: 30%;"/>
+</div>
 
 
 ## Technical Underpinnings: GPT's Role
 
-![image](./images/Unlocking_AHA_Moments/system_design.png)
+<img src="{{ site.baseurl }}/images/Unlocking_AHA_Moments/system_design.png">
 
 
 Our system utilizes GPT capabilities in several key areas:
@@ -63,8 +61,7 @@ Our system utilizes GPT capabilities in several key areas:
 - **Generating Interactive Sections**: Creating user-friendly tooltips and interactive elements.
 - **Storing and Retrieving Click Information**: A vector store enables efficient retrieval of specific user actions and related information.
 
-![image](./images/Unlocking_AHA_Moments/selectors.png)
-
+<img src="{{ site.baseurl }}/images/Unlocking_AHA_Moments/selectors.png">
 
 ## The Competitive Landscape
 
@@ -72,9 +69,10 @@ Our system utilizes GPT capabilities in several key areas:
 2. **Induced AI**: Backed by Sam Altman, they focus on Robotic Process Automation.
 3. **Open-Source Contributions**: Pioneers like Andrej Karpathy and companies like Cohere are contributing significantly to this field through projects like natbot and webLM.
 
-![image](./images/Unlocking_AHA_Moments/adept.png)
-![image](./images/Unlocking_AHA_Moments/induced_ai.png)
-![image](./images/Unlocking_AHA_Moments/open_source_projects.png)
+<img src="{{ site.baseurl }}/images/Unlocking_AHA_Moments/adept.png">
+<img src="{{ site.baseurl }}/images/Unlocking_AHA_Moments/induced_ai.png">
+<img src="{{ site.baseurl }}/images/Unlocking_AHA_Moments/open_source_projects.png">
+
 
 ## Why This Matters to Our Audience
 
