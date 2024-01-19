@@ -10,20 +10,19 @@ use_fontawesome: true
 <!-- Hierarchical Graph Co-Clustering Section -->
 <div class="row content-row">
     <div class="col-12 col-sm-4 image-wrapper">
-        <!-- You can change the image source to a relevant image -->
-        <img src="{{ site.baseurl }}/images/graph-coclustering.jpg">
+        <img src="{{ site.baseurl }}/images/pairwise_adjustment.png">
     </div>
     <div class="col-12 col-sm-8">
         <h3>Research on Hierarchical Graph Co-Clustering</h3>
-        <p class="italic">Cooperation with DIG group (<a href="https://dig.telecom-paris.fr/">https://dig.telecom-paris.fr/</a>)</p>
+        <p class="italic">(<a href="https://dig.telecom-paris.fr/">Cooperation with DIG group</a>)</p>
         <p><span class="bold">Abstract:</span> A well-known metric for quantifying the similarity between two clusterings is the adjusted mutual information. This paper proposes a novel adjustment based on pairwise label permutations, leading to a lower time complexity while maintaining quality. Experiments on synthetic and real data are presented for comparison.</p>
         <p><b>The objective</b> of this work was to develop a metric that assesses the quality of a tree in terms of graph reconstruction. T</p>
         <p><span class="bold"> Mentors:</span> Prof. Thomas Bonald</p>
-        <a href="https://github.com/denyslazarenko/A-Novel-Information-Theoretic-Metric-for-Labeled-Trees" class="btn btn-light">
-            <i class="fa fa-github"></i> Github
-        </a>
         <a href="https://arxiv.org/abs/2103.12641" class="btn btn-light">
             <i class="fa fa-file"></i> Paper
+        </a>
+        <a href="https://github.com/denyslazarenko/A-Novel-Information-Theoretic-Metric-for-Labeled-Trees" class="btn btn-light">
+            <i class="fa fa-github"></i> Github
         </a>
     </div>
 </div>
