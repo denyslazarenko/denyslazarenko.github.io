@@ -1,8 +1,8 @@
 ---
-title: Ways to speed up a python program
+title: How to speed up a python program?
 layout: post
 use_toc: true
-excerpt: Ways to speed up a python program
+excerpt: 3 methods to speed up a python program
 ---
 ## 1. Before starting any optimizations identify the most problematic parts of Code 
 
@@ -53,7 +53,6 @@ This database-like object contains all information about the profiling and can b
 ## 3. Multithreading in Python
 - [Use shared recources instead of copying](https://research.wmz.ninja/articles/2018/03/on-sharing-large-arrays-when-using-pythons-multiprocessing.html)
 - There are can be several `Threads` inside one `Process`. `Threads` share resources between each other, while `Process` can be executed in `parallel`: without any sharing.    
-![image](https://user-images.githubusercontent.com/13698885/87418526-1b4c2300-c5d2-11ea-8b6b-8940428d4ff2.png)
 - In the multiprocessing module, the `Pool` class is mainly used to implement a pool of processes, each of which will carry out tasks submitted to a Pool object. Generally, the Pool class is more convenient than the `Process` class, especially if the results returned from your concurrent application should be ordered.
 `Pool` class: the `Pool.map()` and `Pool.apply()` methods follow the convention of Python's traditional `map()` and `apply()` methods, ensuring that the returned values are ordered in the same way that the input is. These methods, however, block the main program until a process has finished processing. The Pool class, therefore, also has the `map_async()` and `apply_async()` functions to better assist concurrency and parallelism.
 - Common issues [1](https://stackoverflow.com/questions/13068760/parallelise-python-loop-with-numpy-arrays-and-shared-memory),[2](https://stackoverflow.com/questions/11368486/openmp-and-python)
