@@ -13,8 +13,9 @@ layout: default
     I'm driven by the desire to work in growth environment and committed to make a meaningful impact on the world through AI. 
     I'm a team player with a strong "get-it-done" attitude and a passion for continuous learning.
 </div>
+</div>
 
-<div class="col-12 col-sm-8">
+<div>
     <p>I am following the principles on which Steve Job built himself: WHAT? HOW? WHY?</p>
     <h3>WHAT steps did I take towards AI?</h3>
     <p>The 21st century brought with it three basic rules: educate yourself to <span style="color: #007BFF;">MAKE</span>, practice and work hard to <span style="color: #28A745;">CREATE</span> and think differently to <span style="color: #DC3545;">INNOVATE</span>. AI is a leading source of change and I do not want to stand apart from it: my will is to participate.</p>
@@ -25,4 +26,3 @@ layout: default
     <p>It is also worth mentioning my work at Microsoft and contributions to the Azure Speech Service product. Due to my curiosity, I have worked in multiple teams. At the Research team I was responsible for training an Acoustic Diarist Identification system for the Swiss language. I learned how to use the Kalidi framework, as well as how to run distributed training on multiple GPUs. As part of the Engineering team, I developed a pipeline for automatic deployment, testing and updating of Speech Recognition models available in more than 70 locales worldwide and serving 100k people daily. This pipeline reduced the deployment time of new models into production by a factor of 10. I integrated the project into a vast codebase requiring communication with more than 10 Product Owners.</p>
 </div>
 
-</div>
