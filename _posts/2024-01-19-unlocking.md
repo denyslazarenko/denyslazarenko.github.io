@@ -82,12 +82,4 @@ Our system utilizes GPT capabilities in several key areas:
 Our end-to-end solution begins with a simple browser extension and culminates in an immersive, AI-crafted product tour.  This topic matters to SaaS companies because, if they are honest, most of their users have no clue about their product’s capabilities. Wit our AI-first solution to this problem, we enable them to hyperpersonalise their product’s experience to each user, thus democratizing access to complex web platforms, making technology more approachable and user-friendly.
 
 ## References
-<div style="display: flex; justify-content: center; padding-top: 20px; padding-bottom: 20px;">
-    <img src="{{ site.baseurl }}/images/Unlocking_AHA_Moments/adept.png">
-</div>
-<div style="display: flex; justify-content: center; padding-top: 20px; padding-bottom: 20px;">
-    <img src="{{ site.baseurl }}/images/Unlocking_AHA_Moments/induced_ai.png">
-</div>
-<div style="display: flex; justify-content: center; padding-top: 20px; padding-bottom: 20px;">
-    <img src="{{ site.baseurl }}/images/Unlocking_AHA_Moments/open_source_projects.png">
-</div>
+- [Slides to presentation](https://pitch.com/v/AI-Revolutionizing-AI-with-Affordable-Solutions-zwgjt3)
