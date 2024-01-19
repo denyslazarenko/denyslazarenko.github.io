@@ -10,10 +10,7 @@ layout: default
     <img src="{{ site.baseurl }}/images/bio.jpg">
 </div>
 <div class="col-12 col-sm-8">
-    <p>As a seasoned Software Engineer specializing in AI, Data Engineering, and Machine Learning, my career is a testament to a data-driven, problem-solving ethos. My expertise spans Mathematics, Data Science, and Software Engineering, driving me to make significant impacts in growth-focused environments through innovative AI solutions.</p>
-
-    <p>Influenced by the principles that guided Steve Jobs—'What', 'How', and 'Why'—my approach to AI has been transformative. I believe in the power of education to MAKE, the dedication to work hard to CREATE, and the vision to think differently to INNOVATE. My journey in AI is not just about keeping pace with change but actively shaping it.</p>
-
+    <p>I am a data-driven problem solver with years of experience in AI, Data Engineering and Machine Learning. I have strong technical skills in Mathematics, Data Science, and Software Engineering. I'm driven by the desire to work in growth environment and committed to make a meaningful impact on the world through AI. I'm a team player with a strong "get-it-done" attitude and a passion for continuous learning.</p>
     <h3>Educational Foundation & Skill Development</h3>
     <ul>
         <li>Master’s degree in Data Science from the Technical University of Munich, preceded by a Bachelor’s in System Analysis.</li>
