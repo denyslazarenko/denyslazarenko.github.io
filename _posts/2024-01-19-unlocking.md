@@ -28,7 +28,7 @@ My recent pitch at an [AI Tinkerers](https://munich.aitinkerers.org/) event pres
 
 <div class="row content-row">
 <div class="col-12 col-sm-4">
-    <img src="{{ site.baseurl }}/images/Unlocking_AHA_Moments/chrome_extension.png" alt="Image 1" style="width: 30%;"/>
+    <img src="{{ site.baseurl }}/images/Unlocking_AHA_Moments/chrome_extension.png" alt="Image 1" style="width: 70%;"/>
 </div>
 <div class="col-12 col-sm-8">
     <p>Achieving this requires significant processing power to understand and navigate 
@@ -45,6 +45,10 @@ My recent pitch at an [AI Tinkerers](https://munich.aitinkerers.org/) event pres
 3. **Creating the Tour**: The refined data is then used to construct a user tour on our platform, which can be edited for precision.
 4. **Presenting the Guide**: The final step involves integrating the guide into the user's web experience, either through a Chrome extension or a future SDK.
 
+<div style="display: flex; justify-content: center; padding-top: 20px; padding-bottom: 20px;">
+    <img src="{{ site.baseurl }}/images/Unlocking_AHA_Moments/click_tour.png" alt="Image 3" style="width: 70%;"/>
+</div>
+
 ### The Output
 
 - The tour highlights specific webpage elements accompanied by text explanations, enhancing user understanding and engagement.
@@ -52,8 +56,7 @@ My recent pitch at an [AI Tinkerers](https://munich.aitinkerers.org/) event pres
 - Leveraging a rich database of actions, we can automate tasks based on user input, like integrating Notion seamlessly.
 
 <div style="display: flex; justify-content: center; padding-top: 20px; padding-bottom: 20px;">
-    <img src="{{ site.baseurl }}/images/Unlocking_AHA_Moments/guide.png" alt="Image 2" style="width: 45%;"/>
-    <img src="{{ site.baseurl }}/images/Unlocking_AHA_Moments/click_tour.png" alt="Image 3" style="width: 45%;"/>
+    <img src="{{ site.baseurl }}/images/Unlocking_AHA_Moments/guide.png" alt="Image 2" style="width: 75%;"/>
 </div>
 
 ## Technical Underpinnings: GPT's Role
