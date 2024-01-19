@@ -46,7 +46,7 @@ My recent pitch at an [AI Tinkerers](https://munich.aitinkerers.org/) event pres
 4. **Presenting the Guide**: The final step involves integrating the guide into the user's web experience, either through a Chrome extension or a future SDK.
 
 <div style="display: flex; justify-content: center; padding-top: 20px; padding-bottom: 20px;">
-    <img src="{{ site.baseurl }}/images/Unlocking_AHA_Moments/click_tour.png" alt="Image 3" style="width: 70%;"/>
+    <img src="{{ site.baseurl }}/images/Unlocking_AHA_Moments/guide.png" alt="Image 2" style="width: 75%;"/>
 </div>
 
 ### The Output
@@ -56,7 +56,7 @@ My recent pitch at an [AI Tinkerers](https://munich.aitinkerers.org/) event pres
 - Leveraging a rich database of actions, we can automate tasks based on user input, like integrating Notion seamlessly.
 
 <div style="display: flex; justify-content: center; padding-top: 20px; padding-bottom: 20px;">
-    <img src="{{ site.baseurl }}/images/Unlocking_AHA_Moments/guide.png" alt="Image 2" style="width: 75%;"/>
+    <img src="{{ site.baseurl }}/images/Unlocking_AHA_Moments/click_tour.png" alt="Image 3" style="width: 70%;"/>
 </div>
 
 ## Technical Underpinnings: GPT's Role
@@ -73,15 +73,11 @@ Our system utilizes GPT capabilities in several key areas:
 - **Generating Interactive Sections**: Creating user-friendly tooltips and interactive elements.
 - **Storing and Retrieving Click Information**: A vector store enables efficient retrieval of specific user actions and related information.
 
-<div style="display: flex; justify-content: center; padding-top: 20px; padding-bottom: 20px;">
-    <img src="{{ site.baseurl }}/images/Unlocking_AHA_Moments/selectors.png">
-</div>
-
 ## The Competitive Landscape
 
 1. **Adept**: With over $200M in funding, Adept is training foundational models for visual reasoning across web pages.
 2. **Induced AI**: Backed by Sam Altman, they focus on Robotic Process Automation.
-3. **Open-Source Contributions**: Pioneers like Andrej Karpathy and companies like Cohere are contributing significantly to this field through projects like natbot and webLM.
+3. **Open-Source Contributions**: Pioneers like Andrej Karpathy and projects like natbot and webLM.
 
 <div style="display: flex; justify-content: center; padding-top: 20px; padding-bottom: 20px;">
     <img src="{{ site.baseurl }}/images/Unlocking_AHA_Moments/adept.png">
@@ -93,6 +89,6 @@ Our system utilizes GPT capabilities in several key areas:
     <img src="{{ site.baseurl }}/images/Unlocking_AHA_Moments/open_source_projects.png">
 </div>
 
-## Why This Matters to Our Audience
+## Why This Matters?
 
 This topic resonates with our audience because it represents a cutting-edge technical challenge, bridging AI and user experience. Our end-to-end solution begins with a simple browser extension and culminates in an immersive, AI-crafted product tour. This approach not only enhances user interaction but also democratizes access to complex web platforms, making technology more approachable and user-friendly.
