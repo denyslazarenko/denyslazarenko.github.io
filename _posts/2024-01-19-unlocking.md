@@ -18,7 +18,7 @@ The way better experience could the following: you have a chat assistant which w
 ask you about your goal and then would guide you through the process of achieving it or even 
 better doing it for you!
 
-<div style="display: flex; justify-content: center;">
+<div style="display: flex; justify-content: center; padding-top: 20px; padding-bottom: 20px;">
     <img src="{{ site.baseurl }}/images/Unlocking_AHA_Moments/better_experience.png" style="width: 70%;"/>
 </div>
 
@@ -26,14 +26,20 @@ My recent pitch at an [AI Tinkerers](https://munich.aitinkerers.org/) event pres
 
 ## Our Approach: Simplifying the User Journey
 
-Achieving this requires significant processing power to understand and navigate 
-a website's structure, a task often too complex and costly. Our solution? 
-We focus on identifying and recording the most common user flows, offering detailed, 
-AI-driven demonstrations for end customer. It could be in the form of a video, chatbot, interactive guide 
-or even automation that makes clicks over the website.
+<div class="row content-row">
+<div class="col-12 col-sm-4">
+    <img src="{{ site.baseurl }}/images/Unlocking_AHA_Moments/chrome_extension.png" alt="Image 1" style="width: 30%;"/>
+</div>
+<div class="col-12 col-sm-8">
+    <p>Achieving this requires significant processing power to understand and navigate 
+        a website's structure, a task often too complex and costly. Our solution? 
+        We focus on identifying and recording the most common user flows, offering detailed, 
+        AI-driven demonstrations for end customer. It could be in the form of a video, chatbot, interactive guide 
+        or even automation that makes clicks over the website.</p>
+</div>
+</div>
 
 ### The Process
-
 1. **Capturing User Interaction**: We developed a browser extension to record user clicks and voice. I would like to emphasize that the output is not a traditional video recording, it is events file that captures a DOM of a website and an audio recording.
 2. **Analyzing Data**: The captured data, including an `events.json` and `audio.webm`, undergo processing to filter out relevant information from user actions and website structure data.
 3. **Creating the Tour**: The refined data is then used to construct a user tour on our platform, which can be edited for precision.
@@ -45,17 +51,16 @@ or even automation that makes clicks over the website.
 - Our platform supports various formats, including videos, chats, and automated tours.
 - Leveraging a rich database of actions, we can automate tasks based on user input, like integrating Notion seamlessly.
 
-<div>
-    <img src="{{ site.baseurl }}/images/Unlocking_AHA_Moments/chrome_extension.png" alt="Image 1" style="width: 30%;"/>
-    <img src="{{ site.baseurl }}/images/Unlocking_AHA_Moments/guide.png" alt="Image 2" style="width: 30%;"/>
-    <img src="{{ site.baseurl }}/images/Unlocking_AHA_Moments/click_tour.png" alt="Image 3" style="width: 30%;"/>
+<div style="display: flex; justify-content: center; padding-top: 20px; padding-bottom: 20px;">
+    <img src="{{ site.baseurl }}/images/Unlocking_AHA_Moments/guide.png" alt="Image 2" style="width: 45%;"/>
+    <img src="{{ site.baseurl }}/images/Unlocking_AHA_Moments/click_tour.png" alt="Image 3" style="width: 45%;"/>
 </div>
-
 
 ## Technical Underpinnings: GPT's Role
 
-<img src="{{ site.baseurl }}/images/Unlocking_AHA_Moments/system_design.png">
-
+<div style="display: flex; justify-content: center; padding-top: 20px; padding-bottom: 20px;">
+    <img src="{{ site.baseurl }}/images/Unlocking_AHA_Moments/system_design.png">
+</div>
 
 Our system utilizes GPT capabilities in several key areas:
 
@@ -65,7 +70,9 @@ Our system utilizes GPT capabilities in several key areas:
 - **Generating Interactive Sections**: Creating user-friendly tooltips and interactive elements.
 - **Storing and Retrieving Click Information**: A vector store enables efficient retrieval of specific user actions and related information.
 
-<img src="{{ site.baseurl }}/images/Unlocking_AHA_Moments/selectors.png">
+<div style="display: flex; justify-content: center; padding-top: 20px; padding-bottom: 20px;">
+    <img src="{{ site.baseurl }}/images/Unlocking_AHA_Moments/selectors.png">
+</div>
 
 ## The Competitive Landscape
 
@@ -73,10 +80,15 @@ Our system utilizes GPT capabilities in several key areas:
 2. **Induced AI**: Backed by Sam Altman, they focus on Robotic Process Automation.
 3. **Open-Source Contributions**: Pioneers like Andrej Karpathy and companies like Cohere are contributing significantly to this field through projects like natbot and webLM.
 
-<img src="{{ site.baseurl }}/images/Unlocking_AHA_Moments/adept.png">
-<img src="{{ site.baseurl }}/images/Unlocking_AHA_Moments/induced_ai.png">
-<img src="{{ site.baseurl }}/images/Unlocking_AHA_Moments/open_source_projects.png">
-
+<div style="display: flex; justify-content: center; padding-top: 20px; padding-bottom: 20px;">
+    <img src="{{ site.baseurl }}/images/Unlocking_AHA_Moments/adept.png">
+</div>
+<div style="display: flex; justify-content: center; padding-top: 20px; padding-bottom: 20px;">
+    <img src="{{ site.baseurl }}/images/Unlocking_AHA_Moments/induced_ai.png">
+</div>
+<div style="display: flex; justify-content: center; padding-top: 20px; padding-bottom: 20px;">
+    <img src="{{ site.baseurl }}/images/Unlocking_AHA_Moments/open_source_projects.png">
+</div>
 
 ## Why This Matters to Our Audience
 
