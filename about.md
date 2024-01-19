@@ -6,14 +6,15 @@ layout: default
 <div class="row content-row">
 <div class="col-12 col-sm-4">
     <img src="{{ site.baseurl }}/images/bio.jpg">
+    <img src="{{ site.baseurl }}/images/bio.jpg">
+    <img src="{{ site.baseurl }}/images/bio.jpg">
 </div>
 <div class="col-12 col-sm-8">
     <p>I'm a data-driven problem solver with years of experience in AI, Data Engineering and Machine Learning. 
     I have strong technical skills in Mathematics, Data Science, and Software Engineering. 
     I'm driven by the desire to work in growth environment and committed to make a meaningful impact on the world through AI. 
     I'm a team player with a strong "get-it-done" attitude and a passion for continuous learning.
-</div>
-</div>
+
 
 <div>
     <p>I am following the principles on which Steve Job built himself: WHAT? HOW? WHY?</p>
