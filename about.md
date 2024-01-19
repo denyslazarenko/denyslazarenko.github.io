@@ -21,7 +21,7 @@ layout: default
     <p>My latest and biggest impact on users comes from my work at pyne.ai. I have joined the team as a Founding Engineer. I contributed to the team with knowledge on how to build MVPs quickly, 
     iterate ideas fast and keep the product at the centre of everything.</p>
     
-    <p> Product #1 - Building a Revenue operating system for B2B SaaS companies </p>
+    <p> <b>Product #1 - Building a Revenue operating system for B2B SaaS companies</b> </p>
     <ul>
         <li> Developed data analytics platform for RevOps teams. </li>
         <li> Designed data model, built ETL pipeline and integrated with Hubspot, Salesforce and Chargebee. </li>
@@ -29,7 +29,7 @@ layout: default
         <li> Responsible for diverse functions: Data Management, Backend Development, Product & Hiring. </li>
     </ul>
 
-    <p> Product #2 - Guided product tours </p>
+    <p> <b>Product #2 - Guided product tours</b> </p>
     <ul>
         <li> Co-Developed a browser-based extension that captures user interactions and voice, processes data using Speech Recognition and LLMs, and creates interactive product tours available as video, chatbot, or web page injection. </li>
         <li> Developed a ChatBot for marketing teams based on RAGs. </li>
@@ -37,13 +37,13 @@ layout: default
     </ul>
     
     <p> It is also worth mentioning my work at Microsoft and contributions to the Azure Speech Service product. Due to my curiosity, I have worked in multiple teams. </p>
-    <p>At the Research team:</p>
+    <p> <b>At the Research team</b> </p>
     <ul>
         <li> I was responsible for training an Acoustic Diarist Identification system for the Swiss language. </li>
         <li> I learned how to use the Kalidi framework, as well as how to run distributed training on multiple GPUs. </li>
     </ul>
 
-    <p>At the Speech Recognition team:</p>
+    <p> <b>At the Speech Recognition team</b></p>
     <ul>
         <li> I developed a pipeline for automatic deployment, testing and updating of Speech Recognition models available in more than 70 locales worldwide and serving 100k people daily.  </li>
         <li> This pipeline reduced the deployment time of new models into production by a factor of 10. I integrated the project into a vast codebase requiring communication with more than 10 Product Owners. </li>
