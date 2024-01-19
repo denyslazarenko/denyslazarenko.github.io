@@ -10,13 +10,17 @@ excerpt: Unlocking AHA Moments
 Have you ever felt overwhelmed while using a sophisticated web platform, like Google Cloud, due to its plethora of options? 
 This common challenge hinders many users from fully utilizing these powerful tools. 
 
-<img src="{{ site.baseurl }}/images/Unlocking_AHA_Moments/gcp.png">
+<div style="display: flex; justify-content: center;">
+    <img src="{{ site.baseurl }}/images/Unlocking_AHA_Moments/system_design.png" style="width: 70%;"/>
+</div>
 
 The way better experience could the following: you have a chat assistant which would 
 ask you about your goal and then would guide you through the process of achieving it or even 
 better doing it for you!
 
-![image](./images/Unlocking_AHA_Moments/better_experience.png)
+<div style="display: flex; justify-content: center;">
+    <img src="{{ site.baseurl }}/images/Unlocking_AHA_Moments/better_experience.png" style="width: 70%;"/>
+</div>
 
 My recent pitch at an [AI Tinkerers](https://munich.aitinkerers.org/) event presented an innovative solution that we developed at [pyne](pyne.ai) to this problem, harnessing AI to simplify and personalize user interaction with complex websites.
 
