@@ -10,8 +10,8 @@ excerpt: Unlocking AHA Moments
 Have you ever felt overwhelmed while using a sophisticated web platform, like Google Cloud, due to its plethora of options? 
 This common challenge hinders many users from fully utilizing these powerful tools. 
 
-<div style="display: flex; justify-content: center;">
-    <img src="{{ site.baseurl }}/images/Unlocking_AHA_Moments/system_design.png" style="width: 70%;"/>
+<div style="display: flex; justify-content: center; padding-top: 20px; padding-bottom: 20px;">
+    <img src="{{ site.baseurl }}/images/Unlocking_AHA_Moments/gcp.png" style="width: 70%;"/>
 </div>
 
 The way better experience could the following: you have a chat assistant which would 
