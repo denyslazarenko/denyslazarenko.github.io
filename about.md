@@ -8,8 +8,11 @@ layout: default
     <img src="{{ site.baseurl }}/images/bio.jpg">
 </div>
 <div class="col-12 col-sm-8">
-    <p>Mark Zuckerberg once said: “Move fast and break things. Unless you are breaking stuff, you are not moving fast enough”. Currently, this quotation is the driving force of my life. Living in the 21 century, we should follow three basic rules: MAKE. CREATE. INNOVATE. Data Science is the leading force of innovation. It is our future and I do not want to stand apart. My choice is to PARTICIPATE.</p>
-
+    <p>I'm a data-driven problem solver with years of experience in AI, Data Engineering and Machine Learning. 
+    I have strong technical skills in Mathematics, Data Science, and Software Engineering. 
+    I'm driven by the desire to work in growth environment and committed to make a meaningful impact on the world through AI. 
+    I'm a team player with a strong "get-it-done" attitude and a passion for continuous learning.
+    
     <p>I received my Bachelor degree in System Analysis at the National Technical University of Ukraine. I have a deep knowledge of math, physics, algorithms and programming languages. I have supplemented my knowledge by attending various seminars held in different colleges. I presented papers on “Usage of artificial neural networks in the energy sector” at Artificial Intelligence and Intelligent Systems Conference, International Level Technical Conference.</p>
 
     <p>During the last 4 years I made intensive progress in the field of Machine Learning and Big Data:
