@@ -10,7 +10,9 @@ excerpt: Ways to speed up a python program2
 Have you ever felt overwhelmed while using a sophisticated web platform, like Google Cloud, due to its plethora of options? 
 This common challenge hinders many users from fully utilizing these powerful tools. 
 
-![image](./images/Unlocking_AHA_Moments/gcp.png)
+<div class="col-12 col-sm-4 image-wrapper">
+    <img src="{{ site.baseurl }}/images/Unlocking_AHA_Moments/gcp.png">
+</div>
 
 The way better experience could the following: you have a chat assistant which would 
 ask you about your goal and then would guide you through the process of achieving it or even 
