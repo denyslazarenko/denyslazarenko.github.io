@@ -6,7 +6,6 @@ excerpt: Unlocking AHA Moments
 ---
 ## Introduction: Navigating the Maze of Modern Web Platforms
 
-
 Have you ever felt overwhelmed while using a sophisticated web platform, like Google Cloud, due to its plethora of options? 
 This common challenge hinders many users from fully utilizing these powerful tools. 
 
@@ -79,6 +78,10 @@ Our system utilizes GPT capabilities in several key areas:
 2. **Induced AI**: Backed by Sam Altman, they focus on Robotic Process Automation.
 3. **Open-Source Contributions**: Pioneers like Andrej Karpathy and projects like natbot and webLM.
 
+## Why This Matters?
+Our end-to-end solution begins with a simple browser extension and culminates in an immersive, AI-crafted product tour.  This topic matters to SaaS companies because, if they are honest, most of their users have no clue about their product’s capabilities. Wit our AI-first solution to this problem, we enable them to hyperpersonalise their product’s experience to each user, thus democratizing access to complex web platforms, making technology more approachable and user-friendly.
+
+## References
 <div style="display: flex; justify-content: center; padding-top: 20px; padding-bottom: 20px;">
     <img src="{{ site.baseurl }}/images/Unlocking_AHA_Moments/adept.png">
 </div>
@@ -88,7 +91,3 @@ Our system utilizes GPT capabilities in several key areas:
 <div style="display: flex; justify-content: center; padding-top: 20px; padding-bottom: 20px;">
     <img src="{{ site.baseurl }}/images/Unlocking_AHA_Moments/open_source_projects.png">
 </div>
-
-## Why This Matters?
-
-This topic resonates with our audience because it represents a cutting-edge technical challenge, bridging AI and user experience. Our end-to-end solution begins with a simple browser extension and culminates in an immersive, AI-crafted product tour. This approach not only enhances user interaction but also democratizes access to complex web platforms, making technology more approachable and user-friendly.
