@@ -5,6 +5,7 @@ layout: default
 
 <div class="row content-row">
 <div class="col-12 col-sm-4">
+    <img src="{{ site.baseurl }}/images/denys0.jpeg">
     <img src="{{ site.baseurl }}/images/denys1.jpeg">
     <img src="{{ site.baseurl }}/images/denys2.jpeg">
 </div>
