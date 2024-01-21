@@ -84,7 +84,7 @@ focuses on how accurately we can retrieve necessary chunks from vector store.
   - Faithfulness
     - This measures the factual consistency of the generated answer against the given context. It is calculated from `answer` and retrieved `context`.
 
-### Problems:
+### Problems
 - **Problem: Evaluation Speed**   
 The current evaluation process is slow, taking approximately one minute per question for all metrics.   
 **Solutions**:
