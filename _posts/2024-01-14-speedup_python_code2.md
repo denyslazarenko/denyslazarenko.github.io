@@ -4,7 +4,7 @@ layout: post
 use_toc: true
 excerpt: How to build a dataset to evaluate a RAG?
 ---
-## System Design
+### System Design
 
 <div style="display: flex; justify-content: center; padding-top: 20px; padding-bottom: 20px;">
     <img src="{{ site.baseurl }}/images/LLMOps/system_design.png">
@@ -12,7 +12,6 @@ excerpt: How to build a dataset to evaluate a RAG?
 
 Evaluating RAG models involves a systematic process that can be broken down into several steps. Below is a detailed guide based on the key components you've outlined.
 
-#### Data Processing
 #### Question Generation
 - **Generate N questions**: with a simple prompt generate a set of N questions from each data chunk.
 - **Embed Questions**: remove duplicated questions and convert the generated questions into vectors for similarity searches.
@@ -40,13 +39,11 @@ Finnaly, we could create questions that are based on multiple relevant chunks, c
 - **Score = Metric(Question, Answer, Context, Prompt)**
 You can find a list of metrics below.
 
-<div style="display: flex; justify-content: center; padding-top: 20px; padding-bottom: 20px;">
-    <img src="{{ site.baseurl }}/images/LLMOps/dashboard.png" style="width: 60%;"/>
+<div style="display: flex; justify-content: center; padding-top: 40px; padding-bottom: 40px;">
+    <img src="{{ site.baseurl }}/images/LLMOps/dashboard.png" style="width: 75%;"/>
 </div>
 
-Dashboard could be implemented using superset or metabase.
-
-## Parameters
+### Parameters
 - **Chunking**
   - Chunk size
   - Chunk overlap
@@ -61,7 +58,7 @@ Dashboard could be implemented using superset or metabase.
   - Prompt
   - Temperature
 
-## Metrics
+### Metrics
 **Chunking**   
 this is difficult to measure, therefore we can only evaluate end-to-end performance. 
 
@@ -87,7 +84,7 @@ focuses on how accurately we can retrieve necessary chunks from vector store.
   - Faithfulness
     - This measures the factual consistency of the generated answer against the given context. It is calculated from `answer` and retrieved `context`.
 
-## Problems:
+### Problems:
 - **Problem: Evaluation Speed**   
 The current evaluation process is slow, taking approximately one minute per question for all metrics.   
 **Solutions**:
