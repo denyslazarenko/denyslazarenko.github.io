@@ -5,9 +5,8 @@ layout: default
 
 <div class="row content-row">
 <div class="col-12 col-sm-4">
-    <img src="{{ site.baseurl }}/images/bio.jpg">
-    <img src="{{ site.baseurl }}/images/bio.jpg">
-    <img src="{{ site.baseurl }}/images/bio.jpg">
+    <img src="{{ site.baseurl }}/images/denys1.jpeg">
+    <img src="{{ site.baseurl }}/images/denys2.jpeg">
 </div>
 <div class="col-12 col-sm-8">
     <p>I am a data-driven problem solver with years of experience in AI, Data Engineering and Machine Learning. I have strong technical skills in Mathematics, Data Science, and Software Engineering. I'm driven by the desire to work in growth environment and committed to make a meaningful impact on the world through AI. I'm a team player with a strong "get-it-done" attitude and a passion for continuous learning.</p>
