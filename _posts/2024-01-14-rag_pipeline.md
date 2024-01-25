@@ -111,5 +111,11 @@ Due to the time-intensive nature of the analysis and associated costs, it is cru
   - Question Clustering: Organize questions into cluster groups and prioritize evaluation on the top 5 clusters.
   - Topic Modeling: Employ techniques like BERTtopic to effectively group questions into relevant topics for targeted evaluation.
 
+### Quick wins to boost quality
+1. Embeddings are important to boost quality. Right off the box, you can get a 5-7% increase. You can tune the encoder end-to-end without tuning the LLM, you need to keep an eye on end metric for quality. You can look into **MTEB (Massive Text Embedding Benchmark)** to compare quality. Tuning with LLM should be the last resort.
+2. **MMR(Maximal Marginal Relevance)** on top of the Embeddings output increases the diversity of the final hints and has a better impact on the final generation. The idea here is that we need to get not the top N closest chunks, but the top N diverse relevant chuncks that are not paraphrases of each other.
+3. **Hierarchical chunks splitting**: from small to large. Specifically, we split the documents not into large pieces but maintain a hierarchy of large chunk - subchunks. Then we search specifically by subchunk, and in the prompt, the parent large chunk is returned as feedback. This expansion of context solves the 'lost in the middle' issues. 
+
+
 ### Literature 
 - [Hands-On Large Language Models(Jay Alammar, Maarten Grootendorst)](https://learning.oreilly.com/api/v1/continue/9781098150952/)
