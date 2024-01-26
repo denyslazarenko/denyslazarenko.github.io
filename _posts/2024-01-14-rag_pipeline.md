@@ -55,7 +55,7 @@ There are a bunch of parameters that could be optimized to improve the quality o
 <br>
 
 #### Metrics
-While there are numerous useful metrics, it's impractical to focus on all of them simultaneously. The table below presents these metrics, which can be further categorized based on evaluation speed: 'slow' (taking approximately 5-10 seconds due to an additional call to the LLM for calculation) and 'fast'. This categorization aids in understanding the time efficiency of each metric during evaluation.
+While there are numerous useful metrics, it's impractical to focus on all of them simultaneously. The table below presents these metrics, which can be further categorized based on evaluation speed: <code>slow</code> (taking approximately 5-10 seconds due to an additional call to the LLM for calculation) and <code>fast</code>. This categorization aids in understanding the time efficiency of each metric during evaluation.
 <div style="display: flex; justify-content: center; padding-top: 20px; padding-bottom: 20px;">
     <img src="{{ site.baseurl }}/images/LLMOps/retrival2.png" style="width: 35%; height: 35%;"/>
     <img src="{{ site.baseurl }}/images/LLMOps/retrival.png" style="width: 45%; height: 45%;"/>
