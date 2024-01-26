@@ -19,7 +19,8 @@ Evaluating RAG models involves a systematic process that can be broken down into
 
 ##### <ins>Question Filtering and Finalization</ins>
 - **Filter with Threshold**: set a threshold to filter out questions that are very similar to each other to ensure question uniqueness and relevance.
-- **Combine chunks at random and generate questions**: Integrate questions from various chunks randomly to enhance diversity and create a final set of questions.
+- **Combine chunks at random and generate questions**: 
+  - Integrate questions from various chunks randomly to enhance diversity and create a final set of questions.
   - While developing questions from individual chunks of text, we encountered an issue where each question is linked to a single, isolated chunk. 
   In reallity, it is frequent the case that question is answered by chunks that are connected between each other. To enhance our question set, we're now focusing on formulating questions that draw upon multiple chunks, even if these chunks are located far apart. 
   - From **Questions-to-Questions with Score** step we know which chunks generates similar questions, so we could assume that these chunks could be connected to each other and be helpful while answering question. 
@@ -44,20 +45,20 @@ Evaluating RAG models involves a systematic process that can be broken down into
 #### Parameters to optimize
 There are a bunch of parameters that could be optimized to improve the quality of the final result. I listed some of them below.   
 
-| **Chunking**       | **Retrival**                                          | **Generation**      |
-|--------------------|-------------------------------------------------------|---------------------|
-| - Chunk size       | - Number of results                                   | - LLM Model         |
-| - Chunk overlap    | - Similarity threshold                                | - Prompt            |
-| - Embedding model  | - Retrival Strategy (BM25, cosine similarity, hybrid) | - Temperature       |
-|                    | - Reranking                                           |                     |
+| **Chunking**   | **Retrival**                                    | **Generation** |
+|----------------|-------------------------------------------------|---------------|
+| Chunk size     | Number of results                               | LLM Model     |
+| Chunk overlap  | Similarity threshold                            | Prompt        |
+| Embedding model | Retrival Strategy (BM25, cosine similarity, hybrid) | Temperature   |
+|                | Reranking                                       |               |
 
 
 #### Metrics
-| **Chunking**                                                                           | **Retrival**                                                                                                                                                                                                                                                               | **Generation**                                                                                                                                                                |
-|----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| - this is difficult to measure, therefore we can only evaluate end-to-end performance. | - <ins>Context Precision</ins>: Evaluates whether all of the ground-truth relevant items present in the `context` are ranked higher or not. Ideally all the relevant chunks must appear at the top ranks. This metric is computed using the `question` and the `contexts`. | - BLEU/ROUGE<br> - BERTScore<br>                                                                                                                                              |
-|                                                                                        | - Mean Average Precision                                                                                                                                                                                                                                                   | - <ins>Faithfulness</ins>: This measures the factual consistency of the generated answer against the given context. It is calculated from `answer` and retrieved `context`.   |
-|                                                                                        |                                                                                                                                                                                                                                                                            | - <ins>Answer Relevance</ins>: focuses on assessing how pertinent the generated answer is to the given prompt. This metric is computed using the `question` and the `answer`. |
+| **Chunking**                                                                         | **Retrival**                                                                                                                                                                                                                          | **Generation**                                                                                                                                                           |
+|--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| This is difficult to measure, so we only evaluate end-to-end performance.            | <ins>Context Precision</ins>: Evaluates the ranking of ground-truth relevant items in the `context`. Computed using `question` and `contexts`.                                                                                        | BLEU/ROUGE/BERTScore                                                                                                                                                     |
+|                                                                                      | Mean Average Precision                                                                                                                                                                                                                | <ins>Faithfulness</ins>: Measures the factual consistency of the generated answer against the context. Calculated from `answer` and `context`.                            |
+|                                                                                      |                                                                                                                                                                                                                                       | <ins>Answer Relevance</ins>: Assesses the relevance of the generated answer to the prompt. Computed using `question` and `answer`.                                        |
 
 
 <div style="display: flex; justify-content: center; padding-top: 20px; padding-bottom: 20px;">
