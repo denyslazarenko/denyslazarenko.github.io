@@ -4,7 +4,7 @@ layout: post
 use_toc: true
 excerpt: How to build a dataset to evaluate a RAG?
 ---
-### System Design
+#### System Design
 
 <div style="display: flex; justify-content: center; padding-top: 20px; padding-bottom: 20px;">
     <img src="{{ site.baseurl }}/images/LLMOps/system_design.png">
@@ -41,7 +41,7 @@ Evaluating RAG models involves a systematic process that can be broken down into
     <img src="{{ site.baseurl }}/images/LLMOps/dashboard.png" style="width: 75%;"/>
 </div>
 
-### Parameters to optimize
+#### Parameters to optimize
 There are a bunch of parameters that could be optimized to improve the quality of the final result. I listed some of them below.   
 
 | **Chunking**       | **Retrival**                                          | **Generation**      |
@@ -52,7 +52,7 @@ There are a bunch of parameters that could be optimized to improve the quality o
 |                    | - Reranking                                           |                     |
 
 
-### Metrics
+#### Metrics
 | **Chunking**                                                                           | **Retrival**                                                                                                                                                                                                                                                               | **Generation**                                                                                                                                                                |
 |----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | - this is difficult to measure, therefore we can only evaluate end-to-end performance. | - <ins>Context Precision</ins>: Evaluates whether all of the ground-truth relevant items present in the `context` are ranked higher or not. Ideally all the relevant chunks must appear at the top ranks. This metric is computed using the `question` and the `contexts`. | - BLEU/ROUGE<br> - BERTScore<br>                                                                                                                                              |
@@ -66,7 +66,7 @@ There are a bunch of parameters that could be optimized to improve the quality o
 </div>
 
 
-### Problems
+#### Problems
 - **Problem: Evaluation Speed of Metrics**   
 Current evaluation process is slow, taking approximately one minute per question for all metrics.   
 <ins>Solutions:<ins>
@@ -90,13 +90,13 @@ Due to the time-intensive nature of the analysis and associated costs, it is cru
   - Question Clustering: Organize questions into cluster groups and prioritize evaluation on the top 5 clusters.
   - Topic Modeling: Employ techniques like BERTtopic to effectively group questions into relevant topics for targeted evaluation.
 
-### Quick wins to boost quality
+#### Quick wins to boost quality
 1. Embeddings are important to boost quality. Right off the box, you can get a 5-7% increase. You can tune the encoder end-to-end without tuning the LLM, you need to keep an eye on end metric for quality. You can look into **MTEB (Massive Text Embedding Benchmark)** to compare quality. Tuning with LLM should be the last resort.
 2. **MMR(Maximal Marginal Relevance)** on top of the Embeddings output increases the diversity of the final hints and has a better impact on the final generation. The idea here is that we need to get not the top N closest chunks, but the top N diverse relevant chuncks that are not paraphrases of each other.
 3. **Hierarchical chunks splitting**: from small to large. Specifically, we split the documents not into large pieces but maintain a hierarchy of large chunk - subchunks. Then we search specifically by subchunk, and in the prompt, the parent large chunk is returned as feedback. This expansion of context solves the 'lost in the middle' issues. 
 
 
-### Literature 
+#### Literature 
 - [Hands-On Large Language Models(Jay Alammar, Maarten Grootendorst)](https://learning.oreilly.com/api/v1/continue/9781098150952/)
 - [Maximal Marginal Relevance](https://python.langchain.com/docs/modules/model_io/prompts/example_selector_types/mmr)
 - [Evaluate RAG with LlamaIndex](https://github.com/openai/openai-cookbook/blob/main/examples/evaluation/Evaluate_RAG_with_LlamaIndex.ipynb)
