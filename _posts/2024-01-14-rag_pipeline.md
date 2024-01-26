@@ -52,8 +52,15 @@ There are a bunch of parameters that could be optimized to improve the quality o
 | Embedding model | Retrival Strategy (BM25, cosine similarity, hybrid) | Temperature   |
 |                | Reranking                                       |               |
 
+<br>
 
 #### Metrics
+
+<div style="display: flex; justify-content: center; padding-top: 20px; padding-bottom: 20px;">
+    <img src="{{ site.baseurl }}/images/LLMOps/retrival2.png" style="width: 35%; height: 35%;"/>
+    <img src="{{ site.baseurl }}/images/LLMOps/retrival.png" style="width: 45%; height: 45%;"/>
+</div>
+
 <table>
     <tr>
         <th>Chunking</th>
@@ -77,11 +84,7 @@ There are a bunch of parameters that could be optimized to improve the quality o
     </tr>
 </table>
 
-<div style="display: flex; justify-content: center; padding-top: 20px; padding-bottom: 20px;">
-    <img src="{{ site.baseurl }}/images/LLMOps/retrival2.png" style="width: 35%; height: 35%;"/>
-    <img src="{{ site.baseurl }}/images/LLMOps/retrival.png" style="width: 45%; height: 45%;"/>
-</div>
-
+<br>
 
 #### Problems
 - **Problem: Evaluation Speed of Metrics**   
