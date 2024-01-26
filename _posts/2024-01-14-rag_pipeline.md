@@ -55,7 +55,7 @@ There are a bunch of parameters that could be optimized to improve the quality o
 <br>
 
 #### Metrics
-
+While there are numerous useful metrics, it's impractical to focus on all of them simultaneously. The table below presents these metrics, which can be further categorized based on evaluation speed: 'slow' (taking approximately 5-10 seconds due to an additional call to the LLM for calculation) and 'fast'. This categorization aids in understanding the time efficiency of each metric during evaluation.
 <div style="display: flex; justify-content: center; padding-top: 20px; padding-bottom: 20px;">
     <img src="{{ site.baseurl }}/images/LLMOps/retrival2.png" style="width: 35%; height: 35%;"/>
     <img src="{{ site.baseurl }}/images/LLMOps/retrival.png" style="width: 45%; height: 45%;"/>
@@ -69,18 +69,18 @@ There are a bunch of parameters that could be optimized to improve the quality o
     </tr>
     <tr>
         <td>this is difficult to measure, therefore we can only evaluate end-to-end performance.</td>
-        <td><ins>Context Precision</ins>: Evaluates whether all of the ground-truth relevant items present in the <code>context</code> are ranked higher or not. Ideally all the relevant chunks must appear at the top ranks. This metric is computed using the <code>question</code> and the <code>contexts</code>.</td>
+        <td><ins>Context Precision (slow)</ins>: Evaluates whether all of the ground-truth relevant items present in the <code>context</code> are ranked higher or not. Ideally all the relevant chunks must appear at the top ranks. This metric is computed using the <code>question</code> and the <code>contexts</code>.</td>
         <td>BLEU/ROUGE/BERTScore</td>
     </tr>
     <tr>
         <td></td>
         <td>Mean Average Precision</td>
-        <td><ins>Faithfulness</ins>: This measures the factual consistency of the generated answer against the given context. It is calculated from <code>answer</code> and retrieved <code>context</code>.</td>
+        <td><ins>Faithfulness (slow)</ins>: This measures the factual consistency of the generated answer against the given context. It is calculated from <code>answer</code> and retrieved <code>context</code>.</td>
     </tr>
     <tr>
         <td></td>
-        <td></td>
-        <td><ins>Answer Relevance</ins>: focuses on assessing how pertinent the generated answer is to the given prompt. This metric is computed using the <code>question</code> and the <code>answer</code>.</td>
+        <td>Normalized Discounted Cumulative Gain (nDCG)</td>
+        <td><ins>Answer Relevance (slow)</ins>: focuses on assessing how pertinent the generated answer is to the given prompt. This metric is computed using the <code>question</code> and the <code>answer</code>.</td>
     </tr>
 </table>
 
