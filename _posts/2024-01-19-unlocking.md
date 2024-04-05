@@ -81,5 +81,6 @@ Our system utilizes GPT capabilities in several key areas:
 ## Why This Matters?
 Our end-to-end solution begins with a simple browser extension and culminates in an immersive, AI-crafted product tour.  This topic matters to SaaS companies because, if they are honest, most of their users have no clue about their product’s capabilities. Wit our AI-first solution to this problem, we enable them to hyperpersonalise their product’s experience to each user, thus democratizing access to complex web platforms, making technology more approachable and user-friendly.
 
-## References
-- [Slides to presentation](https://pitch.com/v/AI-Revolutionizing-AI-with-Affordable-Solutions-zwgjt3)
+## Presentation
+
+<iframe src="https://pitch.com/embed-link/zwgjt3" allow="fullscreen" allowfullscreen="" width="560" height="368" style="border:0"></iframe>
