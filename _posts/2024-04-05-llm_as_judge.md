@@ -144,9 +144,8 @@ In order to reproduce paper results, we can follow the original code [https://gi
 
 To perform finetuning, authors do it on their own clusters. I experimented with two platforms for fine-tuning. They were both user-friendly and reasonably priced: [OpenPipe](https://openpipe.ai/) and [TogetherAI](https://together.ai/). 
 
-## Presentation
 
-<div style="text-align: center;">
+<div style="text-align: center; padding-top: 40px; padding-bottom: 40px;">
     <iframe src="https://pitch.com/embed-link/j735yf" allow="fullscreen" allowfullscreen="" width="800" height="600" style="border:0"></iframe>
 </div>
 
