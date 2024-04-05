@@ -109,7 +109,7 @@ The original code could be found [here](https://github.com/kaistAI/prometheus). 
 Then during evaluation, we parsed the prediction after the phrase **[RESULT]**.
 
 <div style="display: flex; justify-content: center; padding-top: 20px; padding-bottom: 20px;">
-    <img src="{{ site.baseurl }}/images/Judge_LLM/Untitled_8.png" style="width: 70%;"/>
+    <img src="{{ site.baseurl }}/images/Judge_LLM/Untitled_8.png" style="width: 100%;"/>
 </div>
 
 ### Finetuning
@@ -124,21 +124,18 @@ Then during evaluation, we parsed the prediction after the phrase **[RESULT]**.
 ### Evaluation Datasets
 
 <div style="display: flex; justify-content: center; padding-top: 20px; padding-bottom: 20px;">
-    <img src="{{ site.baseurl }}/images/Judge_LLM/Untitled_9.png" style="width: 70%;"/>
+    <img src="{{ site.baseurl }}/images/Judge_LLM/Untitled_9.png" style="width: 80%;"/>
 </div>
 
 ### Results
 
 <div style="display: flex; justify-content: center; padding-top: 20px; padding-bottom: 20px;">
-    <img src="{{ site.baseurl }}/images/Judge_LLM/Untitled_10.png" style="width: 70%;"/>
+    <img src="{{ site.baseurl }}/images/Judge_LLM/Untitled_10.png" style="width: 80%;"/>
 </div>
 
-<div style="display: flex; justify-content: center; padding-top: 20px; padding-bottom: 20px;">
-    <img src="{{ site.baseurl }}/images/Judge_LLM/Untitled_10.png" style="width: 70%;"/>
-</div>
 
 <div style="display: flex; justify-content: center; padding-top: 20px; padding-bottom: 20px;">
-    <img src="{{ site.baseurl }}/images/Judge_LLM/Untitled_11.png" style="width: 70%;"/>
+    <img src="{{ site.baseurl }}/images/Judge_LLM/Untitled_11.png" style="width: 80%;"/>
 </div>
 
 ## Code
@@ -146,21 +143,6 @@ Then during evaluation, we parsed the prediction after the phrase **[RESULT]**.
 In order to reproduce paper results, we can follow the original code [https://github.com/kaistAI/prometheus](https://github.com/kaistAI/prometheus). However, I prefer the implementations using Langchain, which can be found [here](https://huggingface.co/learn/cookbook/rag_evaluation) and [here](https://huggingface.co/learn/cookbook/llm_judge).
 
 To perform finetuning, authors do it on their own clusters. I experimented with two platforms for fine-tuning. They were both user-friendly and reasonably priced: [OpenPipe](https://openpipe.ai/) and [TogetherAI](https://together.ai/). 
-
-```python
-def upload_and_fine_tune(file_name):
-  file_id = together.Files.upload(file=file_name)["id"]
-
-  fine_tune_response = together.Finetune.create(
-      training_file=file_id,
-      model='togethercomputer/llama-2-7b-chat',
-      n_epochs=1,
-      n_checkpoints=1,
-      batch_size=64,
-      learning_rate=1e-5,
-      suffix=suffix,
-  )
-```
 
 ## Presentation
 
