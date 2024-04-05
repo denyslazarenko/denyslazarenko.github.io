@@ -20,15 +20,15 @@ Evaluating RAG-based chatbot performance can be challenging, particularly when d
 </div>
 
 
-### **Reliable Metric**
+### Reliable Metric
 
 - **Unreliability of RAGAS:** Our chosen metric, RAGAS, proved to be inconsistent, leading to doubts about its effectiveness in providing a true measure of quality. RAGAS gives only a score in the range from 0 to 1, which is difficult to interpret and has built-in bias from LLM itself.
 
-### **Speed**
+### Speed
 
 - **Lag in Execution:** The evaluation process was time-intensive. Multiple interactions with GPT-4 for each question and its subsequent judgment took 30-45s on average, making it slow to test new ideas frequently.
 
-### **Price**
+### Price
 
 - **Cost Considerations:** Frequent use of GPT-4's evaluative capacity came with substantial costs, particularly when the evaluations were for internal purposes rather than customer-driven.
 
@@ -80,7 +80,7 @@ To construct a robust dataset, we focus on:
 3. **Balanced Score Distribution:** We would like to generate dataset with scores that have a meaningful descriptions: Score 1 is bad and progressively improving it until Score 5 which suppose to be a target answer.
 4. **Scope Limitation:** Focusing on realistic situations where a user interacts with a chatbot, ensuring that the instructions and responses are relevant and practical.
 
-## **The Four-Step Process to Constructing a Robust Evaluation Dataset**
+### **The Four-Step Process to Constructing a Robust Evaluation Dataset**
 
 <div style="display: flex; justify-content: center; padding-top: 20px; padding-bottom: 20px;">
     <img src="{{ site.baseurl }}/images/Judge_LLM/Untitled_4.png" style="width: 70%;"/>
@@ -88,19 +88,19 @@ To construct a robust dataset, we focus on:
 
 Creating an evaluation dataset from scratch can be a daunting task. However, the methodology introduced in the paper offers a structured and scalable approach. Let's dive into the four-step process they've outlined.
 
-### **Step 1: Seed Rubrics Creation**
+**Step 1: Seed Rubrics Creation**   
 
 - Initially, **50 seed rubrics** were handcrafted by the authors. These rubrics serve as the foundational examples that capture essential evaluation criteria for LLM outputs.
 
-### **Step 2: Rubric Expansion**
+**Step 2: Rubric Expansion**   
 
 - To expand upon the initial seed rubrics, the authors utilized **GPT-4**. By inputting a random selection of four seed rubrics, GPT-4 was prompted to generate additional rubrics, thereby increasing the number to **1,000**. This iterative process of brainstorming was repeated for 10 rounds to refine and diversify the rubrics.
 
-### **Step 3: Generating Instructions and Reference Answers**
+**Step 3: Generating Instructions and Reference Answers**   
 
 - With the expanded set of rubrics, the next step was to generate **instructions and reference answers**. Each rubric was used as a prompt to create corresponding instructions and reference answers, resulting in a total of **20,000 instances** (20 for each score rubric).
 
-### **Step 4: Response and Feedback Generation**
+**Step 4: Response and Feedback Generation**   
 
 - The final step involved generating responses and feedback for each instruction and reference answer. This was done sequentially, with GPT-4 providing both the response and the feedback based on the previously generated rubrics and reference answers. The result was an extensive dataset of **100,000 instances** (5 for each instruction, with 20K for each score within 1-5).
 
@@ -108,7 +108,7 @@ Creating an evaluation dataset from scratch can be a daunting task. However, the
 
 The original code can be found at [https://github.com/kaistAI/prometheus](https://github.com/kaistAI/prometheus). However, I prefer the implementations using Langchain, which can be found [here](https://huggingface.co/learn/cookbook/rag_evaluation) and [here](https://huggingface.co/learn/cookbook/llm_judge).
 
-# Fine-tuning an evaluator LM
+## Fine-tuning an evaluator LM
 
 The original code could be found [here](https://github.com/kaistAI/prometheus). The following prompt format (already processed in the 'output') was used to train the evaluator LM:
 
@@ -170,7 +170,8 @@ def upload_and_fine_tune(file_name):
 
 ## Presentation
 
-You can find more details here: [https://pitch.com/v/ai-paper-analysis-j735yf](https://pitch.com/v/ai-paper-analysis-j735yf)
+You can find more details here: 
+<iframe src="https://pitch.com/embed/v/ai-paper-analysis-j735yf" width="800" height="600" allowfullscreen="true"></iframe>
 
 ## References
 
