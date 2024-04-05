@@ -83,4 +83,6 @@ Our end-to-end solution begins with a simple browser extension and culminates in
 
 ## Presentation
 
-<iframe src="https://pitch.com/embed-link/zwgjt3" allow="fullscreen" allowfullscreen="" width="800" height="600" style="border:0"></iframe>
+<div style="text-align: center;">
+    <iframe src="https://pitch.com/embed-link/zwgjt3" allow="fullscreen" allowfullscreen="" width="800" height="600" style="border:0"></iframe>
+</div>

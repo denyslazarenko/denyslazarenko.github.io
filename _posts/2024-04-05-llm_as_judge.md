@@ -164,7 +164,9 @@ def upload_and_fine_tune(file_name):
 
 ## Presentation
 
-<iframe src="https://pitch.com/embed-link/j735yf" allow="fullscreen" allowfullscreen="" width="800" height="600" style="border:0"></iframe>
+<div style="text-align: center;">
+    <iframe src="https://pitch.com/embed-link/j735yf" allow="fullscreen" allowfullscreen="" width="800" height="600" style="border:0"></iframe>
+</div>
 
 ## References
 
