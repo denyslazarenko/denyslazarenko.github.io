@@ -50,13 +50,13 @@ The authors assert that by utilizing this approach, performance can match that o
     - **Speed:** Control over execution speed is gained, and scaling can be done by adding more machines.
     - **Consistency:** The specialized model ensures consistent responses, provided no changes have been made to the system.
 
-## Data Structure
+### Data Structure
 
 <div style="display: flex; justify-content: center; padding-top: 20px; padding-bottom: 20px;">
     <img src="{{ site.baseurl }}/images/Judge_LLM/Untitled_3.png" style="width: 70%;"/>
 </div>
 
-### **The Evaluation Model in Action**
+### The Evaluation Model in Action
 
 We start with **Model 1**, which could be our chatbot. The evaluation process is initiated with specific instructions that set the context for the chatbot's task. These instructions are aligned with criteria and a scoring system ranging from 1 to 5, with descriptions for each score, for example reflecting the degree of emotional intelligence and respectfulness in the response.
 
@@ -67,7 +67,7 @@ Here's a step-by-step breakdown:
 3. **Original Response:** The chatbot processes the instruction, user_input, scorining_criterias and responds accordingly.
 4. **Evaluation by LLM Evaluator:** A third-party evaluator, the JudgeLLM, then assesses the chatbot's response against the criteria using a rubric score. The JudgeLLM provides feedback on the response and assigns a score based on the predefined criteria.
 
-### **Main Considerations During Dataset Construction**
+### Main Considerations During Dataset Construction
 
 To construct a robust dataset, we focus on:
 
@@ -76,7 +76,7 @@ To construct a robust dataset, we focus on:
 3. **Balanced Score Distribution:** We would like to generate dataset with scores that have a meaningful descriptions: Score 1 is bad and progressively improving it until Score 5 which suppose to be a target answer.
 4. **Scope Limitation:** Focusing on realistic situations where a user interacts with a chatbot, ensuring that the instructions and responses are relevant and practical.
 
-### **The Four-Step Process to Constructing a Robust Evaluation Dataset**
+### The Four-Step Process to Constructing a Robust Evaluation Dataset
 
 <div style="display: flex; justify-content: center; padding-top: 20px; padding-bottom: 20px;">
     <img src="{{ site.baseurl }}/images/Judge_LLM/Untitled_4.png" style="width: 70%;"/>
@@ -164,7 +164,7 @@ def upload_and_fine_tune(file_name):
 
 ## Presentation
 
-<iframe src="https://pitch.com/embed-link/j735yf" allow="fullscreen" allowfullscreen="" width="560" height="368" style="border:0"></iframe>
+<iframe src="https://pitch.com/embed-link/j735yf" allow="fullscreen" allowfullscreen="" width="800" height="600" style="border:0"></iframe>
 
 ## References
 
