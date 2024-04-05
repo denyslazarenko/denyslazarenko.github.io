@@ -5,42 +5,38 @@ use_toc: true
 excerpt: Paper analysis "Prometheus - Inducing Fine-grained Evaluation Capability in Language Models"
 ---
 
-<div style="display: flex; justify-content: center; padding-top: 20px; padding-bottom: 20px;">
-    <img src="{{ site.baseurl }}/images/Judge_LLM/Untitled.png" style="width: 70%;"/>
-</div>
-
 ## The Why?
+<div style="display: flex; justify-content: center; padding-top: 20px; padding-bottom: 20px;">
+    <img src="{{ site.baseurl }}/images/Judge_LLM/Untitled.png" style="width: 100%;"/>
+</div>
 
 Evaluating RAG-based chatbot performance can be challenging, particularly when diverse customer datasets are at play. The central question is: How do we measure the quality of a conversation when the parameters of 'good' are so variable? In the [previous article](https://denyslazarenko.github.io/2024/01/14/rag_pipeline.html), I proposed a simple method which was based on generating synthetic questions from customer data, and then we were able to measure quality using RAGAs. This involved a two-fold process where GPT-4 not only generated responses but also served as a judge to evaluate their quality based on the context provided. While this method is quick to implement and sets a good baseline, it has many limitations.
 
 ## Limitations
 
 <div style="display: flex; justify-content: center; padding-top: 20px; padding-bottom: 20px;">
-    <img src="{{ site.baseurl }}/images/Judge_LLM/Untitled_1.png" style="width: 70%;"/>
+    <img src="{{ site.baseurl }}/images/Judge_LLM/Untitled_1.png" style="width: 100%;"/>
 </div>
 
-
-### Reliable Metric
-
-- **Unreliability of RAGAS:** Our chosen metric, RAGAS, proved to be inconsistent, leading to doubts about its effectiveness in providing a true measure of quality. RAGAS gives only a score in the range from 0 to 1, which is difficult to interpret and has built-in bias from LLM itself.
-
-### Speed
-
-- **Lag in Execution:** The evaluation process was time-intensive. Multiple interactions with GPT-4 for each question and its subsequent judgment took 30-45s on average, making it slow to test new ideas frequently.
-
-### Price
-
+- **Unreliability of existing metrics:** Our chosen metric, RAGAS, proved to be inconsistent, leading to doubts about its effectiveness in providing a true measure of quality. RAGAS gives only a score in the range from 0 to 1, which is difficult to interpret and has built-in bias from LLM itself.
+- **Speed:** The evaluation process was time-intensive. Multiple interactions with GPT-4 for each question and its subsequent judgment took 30-45s on average, making it slow to test new ideas frequently.
 - **Cost Considerations:** Frequent use of GPT-4's evaluative capacity came with substantial costs, particularly when the evaluations were for internal purposes rather than customer-driven.
 
 To mitigate these issues, we have adopted parallel execution and threading to expedite the process. However, to manage costs, we have limited the frequency of evaluations to periods of significant change.
 
 ## Is there a better approach?
 
+There are many papers that tries to work on the limitations discussed above. Some of them are:
+- [Prometheus: Inducing Fine-grained Evaluation Capability in Language Models](https://arxiv.org/abs/2310.08491)
+- [JudgeLM: Fine-tuned Large Language Models are Scalable Judges](https://arxiv.org/abs/2310.17631)
+- [G-EVAL: NLG Evaluation using GPT-4 with Better Human Alignment](https://arxiv.org/abs/2303.16634)
+- [Can Generalist Foundation Models Outcompete Special-Purpose Tuning? Case Study in Medicine](https://arxiv.org/abs/2311.16452) 
+
+I got inspired by the work "[Prometheus: Inducing Fine-grained Evaluation Capability in Language Models](https://arxiv.org/abs/2310.08491)". The cornerstone of this paper is its innovative approach to generating evaluation datasets based on rubric metric and finetuning local LLM on it. This enables the construction of a specialized Judge Language Model (LLM) that operates on open-source principles and is fine-tuned for nuanced assessment.
+
 <div style="display: flex; justify-content: center; padding-top: 20px; padding-bottom: 20px;">
     <img src="{{ site.baseurl }}/images/Judge_LLM/Untitled_2.png" style="width: 70%;"/>
 </div>
-
-Inspired by the work in "[Prometheus: Inducing Fine-grained Evaluation Capability in Language Models](https://arxiv.org/abs/2310.08491)".   The cornerstone of this paper is its innovative approach to generating evaluation datasets based on rubric metric and finetuning local LLM on it. This enables the construction of a specialized Judge Language Model (LLM) that operates on open-source principles and is fine-tuned for nuanced assessment.
 
 - **GPT-4's Breadth vs. Specialization:** While GPT-4's training encompasses a vast breadth of knowledge, our evaluation needs are often more focused. We're interested in aspects like text length, tone of voice, and politeness of responses.
 - **Introducing the Rubric Score:** The authors introduce a 'rubric score' to capture these fine-grained criteria. For instance, the rubric asks, "Does the model use language and tone that is respectful and considerate, demonstrating emotional intelligence?" Responses are then rated on a scale, with a score of 1 for disrespectful and emotionally unintelligent replies, and a score of 5 for consistent respectfulness and high emotional intelligence.
@@ -104,10 +100,6 @@ Creating an evaluation dataset from scratch can be a daunting task. However, the
 
 - The final step involved generating responses and feedback for each instruction and reference answer. This was done sequentially, with GPT-4 providing both the response and the feedback based on the previously generated rubrics and reference answers. The result was an extensive dataset of **100,000 instances** (5 for each instruction, with 20K for each score within 1-5).
 
-### Code
-
-The original code can be found at [https://github.com/kaistAI/prometheus](https://github.com/kaistAI/prometheus). However, I prefer the implementations using Langchain, which can be found [here](https://huggingface.co/learn/cookbook/rag_evaluation) and [here](https://huggingface.co/learn/cookbook/llm_judge).
-
 ## Fine-tuning an evaluator LM
 
 The original code could be found [here](https://github.com/kaistAI/prometheus). The following prompt format (already processed in the 'output') was used to train the evaluator LM:
@@ -129,25 +121,6 @@ Then during evaluation, we parsed the prediction after the phrase **[RESULT]**.
 - Training batch size which was set according to the model size: for 7B models we used 28 and for 13B models we used 20
 - Number of epochs is set to 3
 
-### Code
-
-I experimented with two platforms for fine-tuning. They were both user-friendly and reasonably priced: [OpenPipe](https://openpipe.ai/) and [TogetherAI](https://together.ai/). 
-
-```python
-def upload_and_fine_tune(file_name):
-  file_id = together.Files.upload(file=file_name)["id"]
-
-  fine_tune_response = together.Finetune.create(
-      training_file=file_id,
-      model='togethercomputer/llama-2-7b-chat',
-      n_epochs=1,
-      n_checkpoints=1,
-      batch_size=64,
-      learning_rate=1e-5,
-      suffix=suffix,
-  )
-```
-
 ### Evaluation Datasets
 
 <div style="display: flex; justify-content: center; padding-top: 20px; padding-bottom: 20px;">
@@ -168,10 +141,30 @@ def upload_and_fine_tune(file_name):
     <img src="{{ site.baseurl }}/images/Judge_LLM/Untitled_11.png" style="width: 70%;"/>
 </div>
 
+## Code
+
+In order to reproduce paper results, we can follow the original code [https://github.com/kaistAI/prometheus](https://github.com/kaistAI/prometheus). However, I prefer the implementations using Langchain, which can be found [here](https://huggingface.co/learn/cookbook/rag_evaluation) and [here](https://huggingface.co/learn/cookbook/llm_judge).
+
+To perform finetuning, authors do it on their own clusters. I experimented with two platforms for fine-tuning. They were both user-friendly and reasonably priced: [OpenPipe](https://openpipe.ai/) and [TogetherAI](https://together.ai/). 
+
+```python
+def upload_and_fine_tune(file_name):
+  file_id = together.Files.upload(file=file_name)["id"]
+
+  fine_tune_response = together.Finetune.create(
+      training_file=file_id,
+      model='togethercomputer/llama-2-7b-chat',
+      n_epochs=1,
+      n_checkpoints=1,
+      batch_size=64,
+      learning_rate=1e-5,
+      suffix=suffix,
+  )
+```
+
 ## Presentation
 
-You can find more details here: 
-<iframe src="https://pitch.com/embed/v/ai-paper-analysis-j735yf" width="800" height="600" allowfullscreen="true"></iframe>
+<iframe src="https://pitch.com/embed-link/j735yf" allow="fullscreen" allowfullscreen="" width="560" height="368" style="border:0"></iframe>
 
 ## References
 
