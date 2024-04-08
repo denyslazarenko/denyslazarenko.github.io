@@ -138,9 +138,15 @@ Then during evaluation, we parsed the prediction after the phrase **[RESULT]**.
     <img src="{{ site.baseurl }}/images/Judge_LLM/Untitled_11.png" style="width: 80%;"/>
 </div>
 
+### Summary
+
+<div style="display: flex; justify-content: center; padding-top: 20px; padding-bottom: 20px;">
+    <img src="{{ site.baseurl }}/images/Judge_LLM/Untitled_13.png" style="width: 80%;"/>
+</div>
+
 ## Code
 
-In order to reproduce paper results, we can follow the original code [https://github.com/kaistAI/prometheus](https://github.com/kaistAI/prometheus). However, I prefer the implementations using Langchain, which can be found [here](https://huggingface.co/learn/cookbook/rag_evaluation) and [here](https://huggingface.co/learn/cookbook/llm_judge).
+In order to reproduce paper results, we can follow the [original code](https://github.com/kaistAI/prometheus). However, I prefer the implementations using Langchain, which can be found [here](https://huggingface.co/learn/cookbook/rag_evaluation) and [here](https://huggingface.co/learn/cookbook/llm_judge).
 
 To perform finetuning, authors do it on their own clusters. I experimented with two platforms for fine-tuning. They were both user-friendly and reasonably priced: [OpenPipe](https://openpipe.ai/) and [TogetherAI](https://together.ai/). 
 
