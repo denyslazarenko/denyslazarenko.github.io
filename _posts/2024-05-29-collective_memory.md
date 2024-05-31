@@ -1,8 +1,8 @@
 ---
-title: Remember Everything Ever: Collective Long-Term Memory of AI Agents against the Doom of Documentation
+title: Collective Long-Term Memory of AI Agents
 layout: post
 use_toc: true
-excerpt: Towards an LLM-Enhanced Collective Memory
+excerpt: Remember Everything Ever
 ---
 
 ## Towards an AI-Enhanced Collective Memory
