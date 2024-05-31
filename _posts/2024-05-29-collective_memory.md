@@ -26,7 +26,7 @@ Advancements in multimodal foundation models (FMs), such as GPT, Gemini, or Llam
 
 Recently, OpenAI enhanced ChatGPT by introducing memory features, which mark a significant advancement in personalization capabilities for large language models (LLM) [3]. While personalization is pivotal in B2C markets, at Interloom, our focus lies in process automation for the B2B sector, where the implementation of Collective Long-Term Memory greatly enhances business automation efficiency. To further empower this capability, we have implemented a concept of Multi Agent system designed to create a Collective Long-Term Memory, capturing data across various customer interaction platforms - internal conversations from Slack/Teams/Emails, facts from PDFs, data from CRMs, etc. - thereby ensuring that no valuable insight is overlooked.
 
-## Automating Documentation **via Multi-Agent Conversation**
+## Automating Documentation via Multi-Agent Conversation
 
 <div style="display: flex; justify-content: center; padding-top: 20px; padding-bottom: 20px;">
     <img src="{{ site.baseurl }}/images/Collective_memory/agent.png" style="width: 100%;"/>
@@ -49,9 +49,9 @@ Through Multi-Agent Collaboration we could automatically extract company-relevan
 - **Action assigner →** This agent determines the next steps for modifying the existing memory records from a list of extracted memories, which includes creating, updating, or deleting operations. It has access to existing memories which are loaded using dynamic memory loading strategies (see Memory Management section).
 - **Action reviewer →** This agent reviews the actions made by the Action assigner and provides necessary feedback, a concept derived from the [Reflexion](https://arxiv.org/pdf/2303.11366) paper [6].
 
-Extracting meaningful facts from conversation threads is a complex task. The system must efficiently extract and store relevant information while maintaining design integrity. For instance, a fine-tuned GPT model can efficiently decide when to read or write to memory based on observed messages. Alternatively, small and non-expensive **Classifier** (i.e. GPT-3.5, Mistral-7b, Llama-3-8b) that observes the current thread of conversation and has access to existing Collective Long-Term Memory decides with (Yes/No) whether there is anything new worth saving to Memory. Then more complex **Knowledge extractor** model (i.e. GPT-4, Claude-3-Opus or Llama-3-400b) extracts relevant entities from the thread. Afterwards, **Action assigner** needs to assign an action to perform for the memory based on existing Collective Long-Term Memory: create, update or delete it.
+Extracting meaningful facts from conversation threads is a complex task. The system must efficiently extract and store relevant information while maintaining design integrity. For instance, a fine-tuned GPT model can efficiently decide when to read or write to memory based on observed messages. Alternatively, small and non-expensive **Classifier** (i.e. GPT-3.5, Mistral-7b, Llama-3-8b) that observes the current thread of conversation and has access to existing Collective Long-Term Memory decides with (Yes/No) whether there is anything new worth saving to Memory. Then more complex **Knowledge extractor** model (i.e. GPT-4, Claude-3-Opus or Llama-3-400b) extracts relevant entities from the thread. Afterwards, **Action assigner** needs to assign an action to perform for the memory based on existing Collective Long-Term Memory: create, update or delete it [9].
 
-### **Memory Management**
+### Memory Management
 
 Effective AI systems require a meticulous balance in managing the available context window through dynamic memory loading strategies. Decisions must be made regarding what information to load, when to load it, and how much memory should be offloaded, all tailored to the specific context and semantic needs of each situation.
 
@@ -60,7 +60,7 @@ Effective AI systems require a meticulous balance in managing the available cont
 
 This strategic approach to storage and memory management ensures that AI systems not only store vast amounts of data but also utilize this information effectively, enabling smarter, context-aware interactions that drive better decision-making and user satisfaction.
 
-### **Data Storage for Collective Long-Term Memory**
+### Data Storage for Collective Long-Term Memory
 
 When constructing a Collective Long-Term Memory, several storage solutions are available, each with its distinct advantages and limitations. Options range from Vector Stores (like Weaviate and Pinecone), to Key/value Stores (such as Redis and MongoDB), to Knowledge Graphs (including Neo4J and DGraph). These systems differ in how they handle data types, volumes, the number of users they support, and their execution speeds based on business needs. At Interloom, we strongly advocate for the use of Knowledge Graphs. Unlike systems that navigate via embeddings, Knowledge Graphs provide a structured way to traverse data, ensuring clearer understanding and traceable, deterministic outputs. Support for this approach is bolstered by findings from Microsoft's recent paper, [GraphRAG: Unlocking LLM Discovery on Narrative Private Data](https://www.microsoft.com/en-us/research/blog/graphrag-unlocking-llm-discovery-on-narrative-private-data/) [7] which illustrates how LLM-generated knowledge graphs significantly enhance the retrieval process in RAG systems. This improvement populates the context window with more relevant content, leads to better responses, and enables the capture of evidence provenance. Ensuring that LLM-generated results are trustworthy - factually accurate, coherent, and reflective of the original content - is crucial.
 
