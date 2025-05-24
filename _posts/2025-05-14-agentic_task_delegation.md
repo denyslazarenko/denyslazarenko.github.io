@@ -3,7 +3,7 @@ title: Agentic Task Delegation
 layout: post
 use_toc: true
 use_code: true
-excerpt: AI Agents reasoning and planning
+excerpt: Experiments that demonstrate the potential of LLM-based solutions for agent delegation.
 ---
 
 ## Introduction
