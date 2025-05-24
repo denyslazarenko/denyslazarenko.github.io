@@ -25,18 +25,15 @@ My recent pitch at an [AI Tinkerers](https://munich.aitinkerers.org/) event pres
 
 ## Our Approach: Simplifying the User Journey
 
-<div class="row content-row">
-<div class="col-12 col-sm-4">
-    <img src="{{ site.baseurl }}/images/Unlocking_AHA_Moments/chrome_extension.png" alt="Image 1" style="width: 70%;"/>
+<div style="display: flex; justify-content: center; padding-top: 20px; padding-bottom: 20px;">
+    <img src="{{ site.baseurl }}/images/Unlocking_AHA_Moments/chrome_extension.png" style="width: 20%;"/>
 </div>
-<div class="col-12 col-sm-8">
-    <p>Achieving this requires significant processing power to understand and navigate 
-        a website's structure, a task often too complex and costly. Our solution? 
-        We focus on identifying and recording the most common user flows, offering detailed, 
-        AI-driven demonstrations for end customer. It could be in the form of a video, chatbot, interactive guide 
-        or even automation that makes clicks over the website.</p>
-</div>
-</div>
+
+Achieving this requires significant processing power to understand and navigate 
+a website's structure, a task often too complex and costly. Our solution? 
+We focus on identifying and recording the most common user flows, offering detailed, 
+AI-driven demonstrations for end customer. It could be in the form of a video, chatbot, interactive guide 
+or even automation that makes clicks over the website.
 
 ### The Process
 1. **Capturing User Interaction**: We developed a browser extension to record user clicks and voice. I would like to emphasize that the output is not a traditional video recording, it is events file that captures a DOM of a website and an audio recording.

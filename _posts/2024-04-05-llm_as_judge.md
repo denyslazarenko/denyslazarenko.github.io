@@ -1,5 +1,5 @@
 ---
-title: LLM as Judge for RAG evaluation pipelines
+title: LLM as a Judge for RAG evaluation pipelines
 layout: post
 use_toc: true
 excerpt: Paper analysis "Prometheus - Inducing Fine-grained Evaluation Capability in Language Models"
