@@ -24,6 +24,7 @@ about page and a projects/research page.
 
 ## Posts
 
+- [How to Use AI to Organise Your Shared Inbox](https://denyslazarenko.github.io/2025/09/25/how-to-use-ai-to-organise-your-shared-inbox.html) (2025-09-25) — Turning unstructured support emails into an AI-generated data map with hierarchical topics.
 - [Agentic Task Delegation](https://denyslazarenko.github.io/2025/05/14/agentic_task_delegation.html) (2025-05-14) — Experiments demonstrating the potential of LLM-based solutions for agent delegation.
 - [Reliable planning with LLMs](https://denyslazarenko.github.io/2024/09/26/reliable_planning.html) (2024-09-26) — AI agent reasoning and planning; PDDL; making LLM plans reliable.
 - [Collective Long-Term Memory of AI Agents](https://denyslazarenko.github.io/2024/05/29/collective_memory.html) (2024-05-29) — Multi-agent conversation for automated documentation and long-term memory.

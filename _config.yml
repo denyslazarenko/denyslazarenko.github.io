@@ -4,6 +4,10 @@ description: AI Engineer curious about GenAI and Robotics.
 
 highlighter: rouge
 
+header_pages:
+  - about.md
+  - projects.md
+
 ##### BUILD SETTINGS #####
 # incremental: true
 
