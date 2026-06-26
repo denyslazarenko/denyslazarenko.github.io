@@ -1,0 +1,25 @@
+AGENTS.md
+  s_9b4ffae25fb1b0::t_23ccd2b1d6e181 27
+_config.yml
+  s_9b4ffae25fb1b0::t_0847cec6209c00 7-10,17
+_posts/2025-09-25-how-to-use-ai-to-organise-your-shared-inbox.md
+  s_9b4ffae25fb1b0::t_bf17ada93a9dcd 1-168
+css/website.css
+  s_9b4ffae25fb1b0::t_e9173c36ef29d7 586-592
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.3",
+  "base_commit_sha": "482b816fb4e1c8764695adcff09565a6c2895d6d",
+  "prompts": {},
+  "sessions": {
+    "s_9b4ffae25fb1b0": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f04be-6abe-72a1-a826-c1af858824a9",
+        "model": "unknown"
+      },
+      "human_author": "Denys Lazarenko <mystalowawola@gmail.com>"
+    }
+  }
+}
