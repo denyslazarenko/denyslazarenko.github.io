@@ -1,0 +1,70 @@
+_posts/2024-04-05-llm_as_judge.md
+  s_ae9d09e209e9e6::t_5278cfe7e00fca 156,158-164
+_includes/navbar.html
+  s_ae9d09e209e9e6::t_bc28f078e980f3 4-9,13-16,18-20,22-23,27,29-30
+  s_ae9d09e209e9e6::t_c6891b9df6adc3 24-26
+_layouts/post.html
+  s_ae9d09e209e9e6::t_d1127d9d31267f 6-8,10,13-15
+_posts/2024-01-14-rag_pipeline.md
+  s_ae9d09e209e9e6::t_4ceecdcc75ffcd 15
+  s_ae9d09e209e9e6::t_cf25a14eae1b5d 119-129
+  s_ae9d09e209e9e6::t_7dc447171d75e8 7
+  s_ae9d09e209e9e6::t_a8a9fc6c9f4722 45
+  s_ae9d09e209e9e6::t_afab352cba98a2 57
+  s_ae9d09e209e9e6::t_08d35276b68bfc 20
+  s_ae9d09e209e9e6::t_464a0f7fb516e9 36
+  s_ae9d09e209e9e6::t_04c3e4868b172a 89
+  s_ae9d09e209e9e6::t_ea97b8bd74ea94 113
+  s_ae9d09e209e9e6::t_8ca13119c2b5c7 31
+_includes/header.html
+  s_ae9d09e209e9e6::t_0fc0401f31aa2b 3-32,34,36-39,41,43,45,47-49,51
+_layouts/default.html
+  s_ae9d09e209e9e6::t_34af866d988ccb 13-18,21,50,54,56,58-69,71
+AGENTS.md
+  s_ae9d09e209e9e6::t_c496ab16ff3421 1-45
+_posts/2024-09-26-reliable_planning.md
+  s_ae9d09e209e9e6::t_7245dab54ae789 205-211
+_layouts/home.html
+  s_ae9d09e209e9e6::t_3346230d7224b1 7-11,13-17,24-29
+  s_ae9d09e209e9e6::t_8c399373a9223a 18-23
+css/website.css
+  s_ae9d09e209e9e6::t_e80d00311f255b 441
+  s_ae9d09e209e9e6::t_a2dbfccfa1b79f 6-12
+  s_ae9d09e209e9e6::t_ef6ae8e0ba7e79 488-489,491-494,498-501,503-506,508
+  s_ae9d09e209e9e6::t_a6c02180dd8852 555-558
+  s_ae9d09e209e9e6::t_1d63d28a088a81 525-526,528
+  s_ae9d09e209e9e6::t_b03b75483c3734 490
+  s_ae9d09e209e9e6::t_556223cedbc81f 153-154
+  s_ae9d09e209e9e6::t_6b760861c6c0c1 13-15
+  s_ae9d09e209e9e6::t_0a9a9077c5f66b 108
+  s_ae9d09e209e9e6::t_a4a40daff16e71 1-5,16-42,45,47-49,52-107,109-133,136-144,147-150,156-166,168-208,210-237,240-244,247-252,255-263,266-270,272,274-276,279-281,283-288,290,292-299,301,303,305,307-308,311-312,314,316-322,324-343,346-347,349-355,358-359,362-364,366-375,377,379-380,382-401,403-407,409-423,427-433,435,437-440,442-443,451-453,461,474-478,480-481,497,511,513-516,570-571,593-625
+  s_ae9d09e209e9e6::t_d6ab9c42eddeb3 454-455
+  s_ae9d09e209e9e6::t_5fabbddfc53936 545-554,559,561-564,568-569
+  s_ae9d09e209e9e6::t_7b81b7d4e88660 560
+  s_ae9d09e209e9e6::t_a78cafbc7d2762 565-567
+  s_ae9d09e209e9e6::t_d26d2ffdb0e634 485-486
+  s_ae9d09e209e9e6::t_b0a21471cb3b65 445-449,456-458,463-465,467-469,471
+  s_ae9d09e209e9e6::t_f44bd6b923607c 517-524,527,529-544
+  s_ae9d09e209e9e6::t_9d0f6ef8ed37ee 572-584,586-587,589-592
+  s_ae9d09e209e9e6::t_92bd0bd18235e5 289,291,300,302,304,306,309,313,315,323
+  s_ae9d09e209e9e6::t_207c3894c91e4f 585,588
+  s_ae9d09e209e9e6::t_1cbda25618dc58 444
+_includes/footer.html
+  s_ae9d09e209e9e6::t_706687c189a93e 1-14
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.3",
+  "base_commit_sha": "9b0253c97ec37ad57821c44434033f7120028ff3",
+  "prompts": {},
+  "sessions": {
+    "s_ae9d09e209e9e6": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "4f9d10d8-b785-4f0f-80b9-d49c64306c70",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Denys Lazarenko <mystalowawola@gmail.com>"
+    }
+  }
+}
