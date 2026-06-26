@@ -3,9 +3,13 @@ layout: default
 ---
 
 {%- if page.use_toc -%}
-    <span>{{ page.excerpt | markdownify }}</span>
-    <h2>Table of Contents</h2>
+  {%- if page.excerpt -%}<p class="post-lead">{{ page.excerpt | strip_html }}</p>{%- endif -%}
+  <nav class="post-toc">
+    <span class="section-marker">Contents</span>
     {% include toc.html html=content %}
+  </nav>
 {%- endif -%}
 
-{{ content }}
+<article class="post-body">
+  {{ content }}
+</article>

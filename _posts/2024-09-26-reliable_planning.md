@@ -188,10 +188,6 @@ After this step we get fully valid plan which is ready to be executed!
 
 ## How to make LLMs plans reliable?
 
-<div style="display: flex; justify-content: center; align-items: center;">
-    <img src="{{ site.baseurl }}/images/Reliable_planning/modulo_improvements.png" style="max-width: 80%;"/>
-</div>
-
 Now that we have learned about LLMs and traditional planning methods, let's find out how can we make the most out of two worlds: deterministic as traditional methods and not deterministic like LLMs.
 
 The use of LLMs in planning and reasoning tasks can be highly beneficial, particularly when leveraged to extract planning knowledge. LLMs can serve as a valuable source of approximate models of world or domain dynamics and user preferences. However, these models require verification and refinement by humans and specialized critics before being handed over to model-based solvers. This is exactly what we discussed in the section above and recent research backs up it: [Robust Planning with LLM-Modulo Framework: Case Study in Travel Planning and LLMs Can't Plan, But Can Help Planning in LLM-Modulo Frameworks.](https://arxiv.org/pdf/2402.01817)
@@ -206,9 +202,13 @@ Verifiers evaluate the **LLM-generated plan** based on both hard and soft constr
 
 In the case of Blockworld problem, the results in the table below show that with back prompting from VAL acting as the external verifier and critic, LLM performance in Blocks World improves to 82% within 15 back prompting rounds, while in Logistics, it improves to 70% [5].
 
-<div style="display: flex; justify-content: center; align-items: center;">
-    <img src="{{ site.baseurl }}/images/Reliable_planning/modulo_improvements.png" style="max-width: 80%;"/>
-</div>
+| Domain | I.C (GPT-4) | A.F.R (GPT-4) |
+| :--- | :---: | :---: |
+| Blocksworld (BW) | 41/50 (82%) | 3.68 |
+| Logistics | 35/50 (70%) | 3.31 |
+| Mystery BW | 5/50 (10%) | 7.0 |
+
+*Table 4: GPT-4 performance with backprompting by VAL [11]. Mystery BW had deceptive disguising. I.C — instances correct (within 15 feedbacks); A.F.R — avg. feedback rounds for correct instances.*
 
 We plan to use this architecture in the real case scenario to validate and benchmark performance there. From first outcomes we can say that critics in the loop improves the performance, also LLMs can successfully implement functions corresponding to hard critics and several common-sense critics and finally LLMs reliably play the role of reformatter as well converting free form plans into structured plans.
 

@@ -4,21 +4,26 @@ layout: default
 
 {{ content }}
 
-<h2>Latest Posts</h2>
+<section class="posts">
+  <div class="section-head">
+    <span class="section-marker">0.2/&nbsp;&nbsp;WRITING</span>
+    <h2 class="section-head__title">Latest Posts</h2>
+  </div>
 
-<ul class="post-list">
-{%- for post in site.posts -%}
-  <li>
-
-    {%- assign date_format = site.cayman-blog.date_format | default: "%b %-d, %Y" -%}
-    <span class="post-meta">{{ post.date | date: date_format }}</span>
-
-    <h2>
-      <a class="post-link" href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title | escape }}</a>
-    </h2>
-
-    <span>{{ post.excerpt | markdownify | truncatewords: 50 }}</span>
-
-  </li>
-{%- endfor -%}
-</ul>
+  <ul class="post-list">
+  {%- for post in site.posts -%}
+    <li class="post-item">
+      <a class="post-item__link" href="{{ post.url | relative_url }}">
+        <span class="post-item__date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <span class="post-item__body">
+          <span class="post-item__title">{{ post.title | escape }}</span>
+          {%- if post.excerpt -%}
+            <span class="post-item__excerpt">{{ post.excerpt | strip_html | truncatewords: 28 }}</span>
+          {%- endif -%}
+        </span>
+        <span class="post-item__arrow" aria-hidden="true">&rarr;</span>
+      </a>
+    </li>
+  {%- endfor -%}
+  </ul>
+</section>
