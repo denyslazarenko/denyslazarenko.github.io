@@ -1,52 +1,53 @@
 {%- if page.layout == 'home' -%}
 
-<div class="jumbotron jumbotron-fluid header header-home">
-  <div class="container">
+<header class="hero">
+  <div class="container hero__inner">
+    <span class="section-marker">0.1/&nbsp;&nbsp;AI ENGINEER — GENAI &amp; ROBOTICS</span>
+    <h1 class="hero__title">Denys<br>Lazarenko</h1>
+    <p class="hero__lead">I build with AI. Currently exploring Generative AI and Robotics — turning research into products that ship.</p>
 
-    <div class="row">
-      <div class="col-12 col-md-4 col-lg-3 mb-3 mb-md-0">
-        <!-- TODO: vertically center align this -->
-        <img id="profile-pic" src="{{ site.baseurl }}/images/logo.jpg">
-      </div>
-      <div class="col-12 col-md-8 col-lg-9">
-        <h1>Denys Lazarenko</h1>
-        <h2>AI Engineer curious about GenAI and Robotics</h2>
-
-        <!-- Contact -->
-        <ul class="contact list-inline banner-social-buttons">
-          <li class="list-inline-item">
-            <a class="btn btn-secondary" href="{{ site.baseurl }}/images/Denys_Lazarenko_CV.pdf" download>
-              <i class="far fa-file-pdf"></i> Resume
-            </a>
-          </li>
-          <li class="list-inline-item">
-          <a class="btn btn-secondary" href="mailto:denys.lazarenko@cdtm.de">
-              <i class="far fa-envelope"></i> Email
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a class="btn btn-secondary" href="https://www.linkedin.com/in/denys-lazarenko/">
-              <i class="fab fa-linkedin"></i> LinkedIn
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a class="btn btn-secondary" href="https://github.com/denyslazarenko">
-              <i class="fab fa-github"></i> GitHub
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
+    <ul class="link-list">
+      <li>
+        <a href="{{ site.baseurl }}/images/Denys_Lazarenko_CV.pdf" download>
+          <i class="far fa-file-pdf"></i> Resume
+        </a>
+      </li>
+      <li>
+        <a href="mailto:denys.lazarenko@cdtm.de">
+          <i class="far fa-envelope"></i> Email
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/denys-lazarenko/">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/denyslazarenko">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </li>
+    </ul>
   </div>
-</div>
+</header>
 
-{%- else -%}
+{%- elsif page.layout == 'post' -%}
 
-<div class="jumbotron jumbotron-fluid header header-page">
+<header class="page-head">
   <div class="container">
-    <h1>{{ page.title }}</h1>
-    <h2>{{ page.description }}</h2>
+    <span class="section-marker">{{ page.date | date: "%b %-d, %Y" }}</span>
+    <h1 class="page-head__title">{{ page.title }}</h1>
   </div>
-</div>
+</header>
+
+{%- elsif page.title -%}
+
+<header class="page-head">
+  <div class="container">
+    <span class="section-marker">{{ page.title | upcase }}</span>
+    <h1 class="page-head__title">{{ page.title }}</h1>
+    {%- if page.description -%}<p class="page-head__lead">{{ page.description }}</p>{%- endif -%}
+  </div>
+</header>
 
 {%- endif -%}
