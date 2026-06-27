@@ -24,7 +24,7 @@ about page and a projects/research page.
 
 ## Posts
 
-- [From Tool-Calling Agents to Coding Agents in Sandboxes](https://denyslazarenko.github.io/2026/06/26/from-tool-calling-agents-to-coding-agents-in-sandboxes.html) (2026-06-26) — Why predefined tool-calling agents and sandboxed coding agents solve different production task shapes.
+- [Harness Engineering: Matching Agents to the Work](https://denyslazarenko.github.io/2026/06/26/from-tool-calling-agents-to-coding-agents-in-sandboxes.html) (2026-06-26) — A production design principle for choosing the right agent harness for bounded execution or exploratory work.
 - [How to Use AI to Organise Your Shared Inbox](https://denyslazarenko.github.io/2025/09/25/how-to-use-ai-to-organise-your-shared-inbox.html) (2025-09-25) — Turning unstructured support emails into an AI-generated data map with hierarchical topics.
 - [Agentic Task Delegation](https://denyslazarenko.github.io/2025/05/14/agentic_task_delegation.html) (2025-05-14) — Experiments demonstrating the potential of LLM-based solutions for agent delegation.
 - [Reliable planning with LLMs](https://denyslazarenko.github.io/2024/09/26/reliable_planning.html) (2024-09-26) — AI agent reasoning and planning; PDDL; making LLM plans reliable.
