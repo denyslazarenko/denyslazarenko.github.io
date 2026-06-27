@@ -67,5 +67,24 @@ layout: compress
       }
     })();
   </script>
+
+  {%- if page.use_mermaid -%}
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
+    <script>
+      mermaid.initialize({
+        startOnLoad: false,
+        theme: 'base',
+        themeVariables: {
+          background: '#fdfaf3',
+          primaryColor: '#f1e9d6',
+          primaryBorderColor: '#1f1b14',
+          primaryTextColor: '#1f1b14',
+          lineColor: '#756f5d',
+          fontFamily: 'Inter, sans-serif'
+        }
+      });
+      mermaid.run({ querySelector: '.mermaid' });
+    </script>
+  {%- endif -%}
 </body>
 </html>
