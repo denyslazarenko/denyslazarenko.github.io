@@ -1,0 +1,25 @@
+_layouts/default.html
+  s_9b4ffae25fb1b0::t_9d884fcef1e97b 70-88
+_posts/2026-06-26-from-tool-calling-agents-to-coding-agents-in-sandboxes.md
+  s_9b4ffae25fb1b0::t_32f83995b0eba8 1-422
+AGENTS.md
+  s_9b4ffae25fb1b0::t_32f83995b0eba8 27
+css/website.css
+  s_9b4ffae25fb1b0::t_32f83995b0eba8 593-609
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.3",
+  "base_commit_sha": "b23af3f213e10a9aaae7c612e360f25d18e09d7d",
+  "prompts": {},
+  "sessions": {
+    "s_9b4ffae25fb1b0": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f04be-6abe-72a1-a826-c1af858824a9",
+        "model": "gpt-5.5"
+      },
+      "human_author": "Denys Lazarenko <mystalowawola@gmail.com>"
+    }
+  }
+}
