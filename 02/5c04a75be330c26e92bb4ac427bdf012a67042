@@ -1,0 +1,23 @@
+projects.md
+  s_adaa26babe9a4c::t_5421a201db0ed4 68,70-78,81-83,85,87-88
+  s_adaa26babe9a4c::t_7475477f507e42 98-118
+  s_adaa26babe9a4c::t_b4bb61ed70a463 49-50,52
+  s_adaa26babe9a4c::t_86e1c4285baddb 62-67,69,79-80,84,86,92-97
+  s_adaa26babe9a4c::t_8f50212842f6cc 89-91
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.3",
+  "base_commit_sha": "025c04a75be330c26e92bb4ac427bdf012a67042",
+  "prompts": {},
+  "sessions": {
+    "s_adaa26babe9a4c": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "2e94085f-385a-4f94-9b75-c1889cd50379",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Denys Lazarenko <mystalowawola@gmail.com>"
+    }
+  }
+}
