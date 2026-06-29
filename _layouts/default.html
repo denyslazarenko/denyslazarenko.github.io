@@ -68,6 +68,10 @@ layout: compress
     })();
   </script>
 
+  {%- if page.layout == 'home' -%}
+    <script src="{{ site.baseurl }}/js/knowledge-graph.js" defer></script>
+  {%- endif -%}
+
   {%- if page.use_mermaid -%}
     <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
     <script>
