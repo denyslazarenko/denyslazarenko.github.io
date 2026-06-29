@@ -1,0 +1,29 @@
+_layouts/default.html
+  s_adaa26babe9a4c::t_feace8c6fae73c 71-74
+css/website.css
+  s_adaa26babe9a4c::t_52b53b31eb3981 183-186,190,198,203-256
+  s_adaa26babe9a4c::t_40404d695b0230 257
+js/knowledge-graph.js
+  s_adaa26babe9a4c::t_c644a6c77eaacf 206
+  s_adaa26babe9a4c::t_481e9d05a03732 1-31,33-36,39-43,45-46,52-54,66-112,115-205,207-347
+  s_adaa26babe9a4c::t_86f412ac9296c2 32,37-38,44,47-51,55-65
+  s_adaa26babe9a4c::t_9c71313857671d 113-114
+_includes/header.html
+  s_adaa26babe9a4c::t_cffb8130c2a7ec 5-41
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.3",
+  "base_commit_sha": "20ec04682ed183354b3724a72bab23116c174271",
+  "prompts": {},
+  "sessions": {
+    "s_adaa26babe9a4c": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "2e94085f-385a-4f94-9b75-c1889cd50379",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Denys Lazarenko <mystalowawola@gmail.com>"
+    }
+  }
+}
