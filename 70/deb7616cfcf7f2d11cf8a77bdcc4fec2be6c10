@@ -1,0 +1,24 @@
+about.md
+  s_adaa26babe9a4c::t_1d06892d59a22f 19-20
+  s_adaa26babe9a4c::t_c126b314fa3c3f 27
+  s_adaa26babe9a4c::t_e9f7bbc7081ce4 23,25
+  s_adaa26babe9a4c::t_36b3d570367214 17-18
+  s_adaa26babe9a4c::t_3af058787ec1f5 29
+  s_adaa26babe9a4c::t_aa3c3992a48b20 28
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.3",
+  "base_commit_sha": "70deb7616cfcf7f2d11cf8a77bdcc4fec2be6c10",
+  "prompts": {},
+  "sessions": {
+    "s_adaa26babe9a4c": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "2e94085f-385a-4f94-9b75-c1889cd50379",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Denys Lazarenko <mystalowawola@gmail.com>"
+    }
+  }
+}
