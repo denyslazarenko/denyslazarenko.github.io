@@ -590,6 +590,23 @@ hr {
   aspect-ratio: auto;
   margin: 0 auto;
 }
+.post-body .mermaid {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  margin: 1.6rem auto;
+  padding: 1rem;
+  overflow-x: auto;
+  text-align: center;
+  background: var(--code-bg);
+  border: 1px solid var(--code-border);
+  border-radius: 10px;
+  box-shadow: var(--shadow-card);
+}
+.post-body .mermaid svg {
+  max-width: 100%;
+  height: auto;
+}
 /* The wrapper around an embed is just for spacing/centering, not a second card */
 .post-body div:has(> iframe) {
   display: block !important;
