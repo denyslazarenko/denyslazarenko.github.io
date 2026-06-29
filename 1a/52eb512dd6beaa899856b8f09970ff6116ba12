@@ -1,0 +1,19 @@
+_includes/header.html
+  s_adaa26babe9a4c::t_20d15af7f2151b 8
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.3",
+  "base_commit_sha": "1a52eb512dd6beaa899856b8f09970ff6116ba12",
+  "prompts": {},
+  "sessions": {
+    "s_adaa26babe9a4c": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "2e94085f-385a-4f94-9b75-c1889cd50379",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Denys Lazarenko <mystalowawola@gmail.com>"
+    }
+  }
+}
