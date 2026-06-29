@@ -14,40 +14,19 @@ layout: default
     <h3>Educational Foundation & Skill Development</h3>
     <ul>
         <li>Master’s degree in Data Science from the Technical University of Munich, preceded by a Bachelor’s in Mathematics.</li>
-        <li>Six years of diverse practical experience in Product Building at Pyne, Machine Learning at Genesis and Mergespot, Software Engineering at Microsoft and Tacto, and Research at Telecom Paris.</li>
-        <li>Deep interest in NLP, Speech Recognition, and Knowledge Graphs, with notable research under Prof. Thomas Bonald at Telecom Paris.</li>
+        <li>Studied at <a href="https://cdtm.com/">CDTM</a>, one of the best programs for founders — its alumni have an exceptional track record of <a href="https://cdtm.com/startups">building startups</a>.</li>
+        <li>Spent a semester abroad at <a href="https://www.berkeley.edu/">UC Berkeley</a>, taking MBA classes.</li>
+        <li>Six years of diverse practical experience in Product Building at Pyne, Machine Learning at Genesis and Mergespot, Software Engineering at Microsoft and Tacto, and Research at <a href="https://www.telecom-paris.fr/">Telecom Paris</a>.</li>
+        <li>Deep interest in NLP, Speech Recognition, and Knowledge Graphs, with notable research under <a href="https://perso.telecom-paristech.fr/bonald/Home_page.html">Prof. Thomas Bonald</a> at <a href="https://www.telecom-paris.fr/">Telecom Paris</a>.</li>
     </ul>
     <h3>Professional Impact & Innovations</h3>
-    <p>My latest and biggest impact on users comes from my work at pyne.ai. I have joined the team as a Founding Engineer. I contributed to the team with knowledge on how to build MVPs quickly, 
-    iterate ideas fast and keep the product at the centre of everything.</p>
-    
-    <p> <b>Product #1 - Building a Revenue operating system for B2B SaaS companies</b> </p>
-    <ul>
-        <li> Developed data analytics platform for RevOps teams. </li>
-        <li> Designed data model, built ETL pipeline and integrated with Hubspot, Salesforce and Chargebee. </li>
-        <li> Created Insights system using ML and LLMs: GPT-4 with Vision + diagrams + tabular data = insights. </li>
-        <li> Responsible for diverse functions: Data Management, Backend Development, Product & Hiring. </li>
-    </ul>
+    <p>I am the Founding AI Engineer at <a href="https://interloom.com/">Interloom</a> and the 1st AI hire, where we're building Enterprise Memory powered by AI Agents. I laid the groundwork for our AI agents, and the company has raised $16.5M from top investors — including <a href="https://www.airstreet.com/">Air Street Capital</a> — our team grew to 25 people, and ARR grows day after day. <a href="https://interloom.com/en/blog/seed-announcement/">Read the seed announcement →</a></p>
 
-    <p> <b>Product #2 - Guided product tours</b> </p>
-    <ul>
-        <li> Co-Developed a browser-based extension that captures user interactions and voice, processes data using Speech Recognition and LLMs, and creates interactive product tours available as video, chatbot, or web page injection. </li>
-        <li> Developed a ChatBot for marketing teams based on RAGs. </li>
-        <li>  Designed quality evaluation and retraining pipeline for RAGs. </li>
-    </ul>
-    
-    <p> It is also worth mentioning my work at Microsoft and contributions to the Azure Speech Service product. Due to my curiosity, I have worked in multiple teams. </p>
-    <p> <b>At the Research team</b> </p>
-    <ul>
-        <li> I was responsible for training an Acoustic Diarist Identification system for the Swiss language. </li>
-        <li> I learned how to use the Kalidi framework, as well as how to run distributed training on multiple GPUs. </li>
-    </ul>
+    <p>Before that, I was the first hire and Founding Product Engineer at Pyne, where we built a RevOps platform powered by AI Agents. I built the platform, helped to hire a top-notch team, and we raised investment from top-tier VC <a href="https://lsvp.com/">Lightspeed</a> and grew to 15 people.</p>
 
-    <p> <b>At the Speech Recognition team</b></p>
-    <ul>
-        <li> I developed a pipeline for automatic deployment, testing and updating of Speech Recognition models available in more than 70 locales worldwide and serving 100k people daily.  </li>
-        <li> This pipeline reduced the deployment time of new models into production by a factor of 10. I integrated the project into a vast codebase requiring communication with more than 10 Product Owners. </li>
-    </ul>
+    <p>During Covid, I co-founded my own startup — green door-to-door delivery of medicines from local pharmacies within two hours. We took it from idea to an MVP pilot with wholesaler Sanacorp, earning spots in top, highly selective startup programs.</p>
+
+    <p>Earlier in my career, I contributed to Microsoft's Azure Speech Service, shipping deployment pipelines for speech-recognition models that served 100k+ users daily across 70+ locales.</p>
 
     <h3>Looking ahead</h3>
     <p>My professional path is driven by a passion for continuous learning and a "get-it-done" attitude. As I continue to explore and contribute to the ever-evolving field of AI, my goal remains to harness technology to create meaningful and impactful solutions.</p>
